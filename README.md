@@ -1,6 +1,16 @@
-# Clipmorph
+<p align="center">
+  <img src="Resources/AboutHeader.png" alt="Clipmorph" width="720">
+</p>
 
-A macOS menu-bar app that transforms your clipboard with AI. Copy text, press **⌥Space**, pick a recipe, and the result streams back onto your clipboard.
+<p align="center">
+  A macOS menu-bar app that transforms your clipboard with AI.<br>
+  Copy text, press <b>⌥Space</b>, pick a recipe, and the result streams back onto your clipboard.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/macOS-14%2B-111?logo=apple" alt="macOS 14+">
+  <img src="https://img.shields.io/badge/Swift-5.10-F05138?logo=swift&logoColor=white" alt="Swift">
+</p>
 
 ## Build & run
 
