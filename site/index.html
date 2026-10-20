@@ -72,6 +72,8 @@
   .btn-quiet { color: var(--fg); background: var(--surface); }
   .btn-quiet:hover { background: var(--surface-2); }
   .btn-small { height: 36px; padding: 0 16px; font-size: 14px; }
+  .btn .dl { width: 18px; height: 18px; }
+  .mac-only { display: none; }
 
   /* Nav */
   .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
@@ -195,8 +197,20 @@
   .faq details[open] summary::after { transform: rotate(45deg); }
   .faq details p { padding: 0 22px 20px; color: var(--muted); font-size: 16px; max-width: 62ch; }
 
-  .start pre { margin-top: 40px; }
-  .start .after { margin-top: 18px; font-size: 15px; color: var(--muted); text-align: center; }
+  .get { margin-top: 40px; display: grid; justify-items: center; gap: 12px; text-align: center; }
+  .get .meta { font-size: 14px; color: var(--muted); }
+  .install { margin: 56px 0 0; padding: 0; list-style: none; display: grid; gap: 28px; counter-reset: step; }
+  .install li { display: grid; grid-template-columns: 36px 1fr; gap: 16px; align-items: start; counter-increment: step; }
+  .install li::before { content: counter(step); width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: var(--surface-2); font-weight: 600; }
+  .install h3 { font-size: 19px; font-weight: 600; padding-top: 4px; }
+  .install p { margin-top: 4px; color: var(--muted); font-size: 16px; }
+  .install pre { margin-top: 12px; }
+  .source { margin-top: 56px; padding: 24px; border-radius: 12px; background: var(--surface); }
+  .source h3 { font-size: 19px; font-weight: 600; }
+  .source p { margin-top: 6px; color: var(--muted); font-size: 16px; }
+  .source pre { margin-top: 16px; background: var(--bg); }
+  .source a { color: var(--fg); }
+  .links { margin-top: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
 
   .maker { text-align: center; }
   .maker .note { margin: 18px auto 0; max-width: 46ch; color: var(--muted); }
@@ -228,6 +242,8 @@
     .steps, .features { grid-template-columns: 1fr; gap: 32px; }
     pre { white-space: pre-wrap; word-break: break-word; }
     footer .wrap { flex-direction: column; text-align: center; }
+    .mac-only { display: block; }
+    .nav-links a[href^="https://github"] { display: none; }
   }
   @media (max-width: 420px) { .list { grid-template-columns: 1fr; } }
   @media (prefers-reduced-motion: reduce) {
@@ -262,7 +278,8 @@
     <nav class="nav-links" aria-label="Sections">
       <a href="#how">How it works</a>
       <a href="#faq">FAQ</a>
-      <a class="btn btn-quiet btn-small" href="#start">Get it</a>
+      <a href="https://github.com/nicop-hd/Clipmorph">GitHub</a>
+      <a class="btn btn-quiet btn-small" href="#download">Download</a>
     </nav>
   </header>
 </div>
@@ -305,10 +322,11 @@
       <h1 id="title"><span class="chrome">Clipmorph</span><span class="what">Rewrite anything you copy, without leaving the app you’re in.</span></h1>
       <p class="lede">Copy text, press <kbd data-key="Alt">⌥</kbd> <kbd data-key=" ">Space</kbd> and pick a recipe. Claude or OpenAI rewrites it, and the result is on your clipboard, ready to paste.</p>
       <div class="actions">
-        <a class="btn btn-primary" href="#start">Get Clipmorph</a>
+        <a class="btn btn-primary" href="https://github.com/nicop-hd/Clipmorph/releases/latest/download/Clipmorph.zip"><svg class="dl" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Download for Mac</a>
         <a class="btn btn-quiet" href="#try">Try it below</a>
       </div>
-      <p class="req">Free · macOS 14+ on Apple silicon · Bring your own Claude or OpenAI key</p>
+      <p class="req">Free · Version 0.1.0 · 0.9 MB · macOS 14+, Apple silicon and Intel</p>
+      <p class="req mac-only">Clipmorph is a Mac app. Open this page on your Mac to install it.</p>
     </section>
   </div>
 
@@ -429,7 +447,7 @@
         </details>
         <details>
           <summary>macOS says it can’t verify the app. Is that normal?</summary>
-          <p>Yes. Clipmorph isn’t notarized by Apple yet, so the first launch is blocked. Open System Settings › Privacy &amp; Security and click Open Anyway. After that it opens normally.</p>
+          <p>Yes. Clipmorph isn’t notarized by Apple yet, so the first launch is blocked. Open System Settings › Privacy &amp; Security and click Open Anyway, or see the Terminal command in <a href="#download">Download</a>. After that it opens normally. The source is public on <a href="https://github.com/nicop-hd/Clipmorph">GitHub</a> if you want to check what it does.</p>
         </details>
         <details>
           <summary>How do I uninstall it?</summary>
@@ -439,19 +457,30 @@
     </div>
   </section>
 
-  <!-- Get it -->
-  <section class="block start" id="start" aria-labelledby="start-title">
+  <!-- Download -->
+  <section class="block start" id="download" aria-labelledby="download-title">
     <div class="wrap narrow">
       <div class="intro">
-        <h2 id="start-title">Get Clipmorph.</h2>
-        <p>Build it from source with the Swift toolchain. The Command Line Tools are enough, no Xcode needed.</p>
+        <h2 id="download-title">Download Clipmorph.</h2>
+        <p>One small app for Apple silicon and Intel Macs running macOS 14 or later.</p>
       </div>
-<pre><code><span class="c"># build the app bundle</span>
-./scripts/build-app.sh
-
-<span class="c"># launch it</span>
+      <div class="get">
+        <a class="btn btn-primary" href="https://github.com/nicop-hd/Clipmorph/releases/latest/download/Clipmorph.zip"><svg class="dl" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Download Clipmorph.zip</a>
+        <p class="meta">Version 0.1.0 · 0.9 MB · <a href="https://github.com/nicop-hd/Clipmorph/releases">All releases</a></p>
+      </div>
+      <ol class="install">
+        <li><div><h3>Unzip and move it to Applications</h3><p>Double-click <code>Clipmorph.zip</code>, then drag Clipmorph into your Applications folder.</p></div></li>
+        <li><div><h3>Allow it the first time</h3><p>Clipmorph isn’t notarized by Apple yet, so macOS blocks the first launch. Open System Settings › Privacy &amp; Security, scroll down and click Open Anyway. Or run this once in Terminal:</p>
+<pre><code>xattr -dr com.apple.quarantine /Applications/Clipmorph.app</code></pre></div></li>
+        <li><div><h3>Add your API key</h3><p>Settings opens on first launch. Paste a Claude or OpenAI key, then press <kbd data-key="Alt">⌥</kbd> <kbd data-key=" ">Space</kbd> anywhere.</p></div></li>
+      </ol>
+      <div class="source">
+        <h3>Prefer to build it yourself?</h3>
+        <p>The full source is on <a href="https://github.com/nicop-hd/Clipmorph">GitHub</a>. You only need the Swift Command Line Tools.</p>
+<pre><code>git clone https://github.com/nicop-hd/Clipmorph.git
+cd Clipmorph && ./scripts/build-app.sh
 open build/Clipmorph.app</code></pre>
-      <p class="after">On first launch, paste a Claude or OpenAI API key in Settings, then press <kbd data-key="Alt">⌥</kbd> <kbd data-key=" ">Space</kbd>.</p>
+      </div>
     </div>
   </section>
 
@@ -465,6 +494,10 @@ open build/Clipmorph.app</code></pre>
         <button class="btn btn-quiet btn-small" type="button" id="copy-addr">Copy</button>
         <a class="btn btn-quiet btn-small" href="mailto:nicopassaro@gmail.com?subject=Clipmorph">Email</a>
       </div>
+      <div class="links">
+        <a class="btn btn-quiet btn-small" href="https://github.com/nicop-hd/Clipmorph">View on GitHub</a>
+        <a class="btn btn-quiet btn-small" href="https://buymeacoffee.com/nicop.hd">Buy me a coffee</a>
+      </div>
     </div>
   </section>
 </main>
@@ -475,7 +508,8 @@ open build/Clipmorph.app</code></pre>
     <nav aria-label="Footer">
       <a href="#how">How it works</a>
       <a href="#faq">FAQ</a>
-      <a href="#start">Build from source</a>
+      <a href="#download">Download</a>
+      <a href="https://github.com/nicop-hd/Clipmorph">GitHub</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
