@@ -12,7 +12,19 @@
   <img src="https://img.shields.io/badge/Swift-5.10-F05138?logo=swift&logoColor=white" alt="Swift">
 </p>
 
-## Build & run
+## Install
+
+1. Download **Clipmorph.zip** from the [latest release](https://github.com/nicop-hd/Clipmorph/releases/latest).
+2. Unzip it and drag **Clipmorph.app** into your **Applications** folder.
+3. Open it. Because the app isn't notarized by Apple yet, macOS will block it the first time. Go to **System Settings → Privacy & Security**, scroll down and click **Open Anyway**. Or run this once in Terminal:
+
+   ```bash
+   xattr -dr com.apple.quarantine /Applications/Clipmorph.app
+   ```
+
+Clipmorph lives in the menu bar (no Dock icon). Runs on Apple Silicon and Intel Macs with macOS 14 or later.
+
+## Build from source
 
 ```bash
 ./scripts/build-app.sh
