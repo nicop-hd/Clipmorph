@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "site/index.html"
+        ],
+        "createdAt": "2026-10-19T13:27:44.211Z",
+        "reason": "Brand chrome wordmark from AboutHeader.png; user asked to keep the retro style text"
+      }
+    ]
+  }
+}

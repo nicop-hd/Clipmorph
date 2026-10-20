@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clipmorph</title>
+<meta name="description" content="Rewrite anything you copy without leaving the app you're in. Clipmorph is a macOS menu-bar app: copy, press ⌥Space, pick a recipe.">
+<meta name="theme-color" content="#120A22">
+<meta property="og:title" content="Clipmorph">
+<meta property="og:description" content="Rewrite anything you copy without leaving the app you're in.">
+<meta property="og:image" content="og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="robot.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,900&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Layout: one centred column; the product scene is the only wide thing on the page. */
+  :root {
+    --bg: #120A22;
+    --surface: #1A1030;
+    --surface-2: #231740;
+    --line: rgba(241, 236, 250, .08);
+    --fg: #F1ECFA;
+    --muted: #ABA0C8;
+    --pink: #FF2D75;
+    --cyan: #25E7FF;
+    --sun-1: #FFE38A;
+    --sun-2: #FFA66B;
+    --select: rgba(37, 231, 255, .22);
+
+    --brand: "Exo 2", system-ui, sans-serif;
+    --font: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+
+    --narrow: 680px;
+    --wide: 1040px;
+    --gutter: max(20px, env(safe-area-inset-left, 0px));
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 400 17px/1.6 var(--font); -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--pink); color: var(--bg); }
+  :focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 6px; }
+  a { color: inherit; text-underline-offset: .2em; }
+  h1, h2, h3, p { margin: 0; }
+  h2 { font-size: clamp(30px, 3.8vw, 46px); font-weight: 600; letter-spacing: -.025em; line-height: 1.1; text-wrap: balance; }
+  .wrap { width: 100%; max-width: calc(var(--wide) + 2 * var(--gutter)); margin-inline: auto; padding-inline: var(--gutter); }
+  .narrow { max-width: calc(var(--narrow) + 2 * var(--gutter)); }
+  code { font-family: var(--mono); font-size: .92em; }
+
+  kbd {
+    display: inline-block; min-width: 1.7em; padding: .14em .45em; border-radius: 6px;
+    background: var(--surface-2); color: var(--fg); font: 500 .85em/1.35 var(--font); text-align: center;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,.45);
+    transition: transform .08s, background-color .08s, box-shadow .08s;
+  }
+  kbd.down { transform: translateY(1px); background: var(--cyan); color: var(--bg); box-shadow: inset 0 0 0 rgba(0,0,0,0); }
+
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; height: 46px; padding: 0 22px; border-radius: 999px; border: 0; cursor: pointer;
+    font: 600 16px/1 var(--font); text-decoration: none; transition: background-color .15s, transform .15s;
+  }
+  .btn:active { transform: scale(.97); }
+  .btn-primary { background: var(--pink); color: var(--bg); }
+  .btn-primary:hover { background: var(--sun-2); }
+  .btn-quiet { color: var(--fg); background: var(--surface); }
+  .btn-quiet:hover { background: var(--surface-2); }
+  .btn-small { height: 36px; padding: 0 16px; font-size: 14px; }
+
+  /* Nav */
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 600; }
+  .brand img { width: 26px; height: 26px; }
+  .nav-links { display: flex; align-items: center; gap: 24px; font-size: 15px; }
+  .nav-links a:not(.btn) { text-decoration: none; color: var(--muted); }
+  .nav-links a:not(.btn):hover { color: var(--fg); }
+
+  /* Hero */
+  .hero { padding-block: 16px 36px; display: grid; justify-items: center; text-align: center; }
+  .art { width: 112px; height: auto; display: block; }
+  .art .bob { animation: bob 4.2s ease-in-out infinite; }
+  .eye { animation: blink 6s infinite; transform-box: fill-box; transform-origin: center; }
+  .led { animation: led 1.6s steps(1) infinite; }
+  @keyframes bob { 50% { transform: translateY(-4px); } }
+  @keyframes blink { 0%, 94%, 100% { transform: scaleY(1); } 96% { transform: scaleY(.1); } }
+  @keyframes led { 50% { opacity: .25; } }
+
+  .chrome {
+    display: inline-block; margin-top: 6px;
+    font: italic 900 clamp(44px, 6vw, 72px)/1 var(--brand); text-transform: uppercase; letter-spacing: .01em;
+    background: linear-gradient(180deg, var(--sun-1) 0%, var(--sun-2) 28%, var(--pink) 50%, #9FEFFF 51%, var(--cyan) 70%, #E8FCFF 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    filter: drop-shadow(1.5px 0 0 var(--pink)) drop-shadow(-1.5px 0 0 var(--pink)) drop-shadow(0 1.5px 0 var(--pink)) drop-shadow(0 -1.5px 0 var(--pink))
+            drop-shadow(3px 3px 0 #7A2E9E) drop-shadow(3px 3px 0 #5A1F80) drop-shadow(3px 3px 0 #3A1360);
+    padding: .04em .12em .1em 0;
+  }
+  .hero h1 { display: grid; justify-items: center; }
+  .hero h1 .what { display: block; margin-top: 16px; max-width: 32ch; font-size: clamp(26px, 2.9vw, 36px); font-weight: 600; letter-spacing: -.025em; line-height: 1.15; text-wrap: balance; }
+  .hero .lede { margin-top: 14px; max-width: 48ch; color: var(--muted); }
+  .hero .actions { margin-top: 24px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .hero .req { margin-top: 14px; font-size: 14px; color: var(--muted); }
+
+  /* Product scene: the panel floating over the app you're working in */
+  .demo { padding-bottom: 112px; }
+  .samples { display: flex; justify-content: center; gap: 6px; flex-wrap: wrap; margin-bottom: 20px; }
+  .samples button {
+    all: unset; cursor: pointer; padding: 8px 16px; border-radius: 999px; font-size: 15px; color: var(--muted);
+    background: transparent; transition: background-color .15s, color .15s;
+  }
+  .samples button:hover { color: var(--fg); background: var(--surface); }
+  .samples button[aria-pressed="true"] { color: var(--fg); background: var(--surface-2); }
+  .samples button:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+
+  .scene { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); }
+  .host {
+    grid-column: 1 / 9; grid-row: 1; align-self: start;
+    background: #F4F2F7; color: #24202E; border-radius: 12px; overflow: hidden; font-size: 15px;
+  }
+  .host-bar { display: flex; align-items: center; gap: 8px; padding: 10px 14px; background: #E6E2EC; font-size: 13px; color: #5B5568; }
+  .host-bar i { width: 11px; height: 11px; border-radius: 50%; background: #CFC9D8; display: inline-block; }
+  .host-bar b { margin-left: 8px; font-weight: 600; color: #3A3446; }
+  .host-fields div { padding: 9px 18px; border-bottom: 1px solid #E3DFE9; color: #5B5568; font-size: 14px; }
+  .host-body { padding: 18px 18px 120px; line-height: 1.6; white-space: pre-wrap; min-height: 260px; }
+  .host-body mark { background: #BFEFF7; color: inherit; border-radius: 2px; }
+  .host-body.pasted { animation: flash 1s ease-out; }
+  @keyframes flash { from { background: #FFF1C9; } }
+
+  .panel {
+    grid-column: 5 / 13; grid-row: 1; margin-top: 96px; position: relative; z-index: 1;
+    background: var(--surface); border: 1px solid rgba(241, 236, 250, .12); border-radius: 16px; overflow: hidden;
+    box-shadow: 0 30px 60px -20px rgba(4, 1, 10, .8);
+  }
+  .panel-head { display: flex; gap: 12px; align-items: flex-start; padding: 14px 18px; border-bottom: 1px solid var(--line); }
+  .bot { width: 26px; height: 22px; flex: none; margin-top: 1px; }
+  .bot .pupil { transition: fill .2s; }
+  .panel.busy .bot .pupil { fill: var(--sun-1); animation: led .5s steps(1) infinite; }
+  .clip { font: 14px/1.5 var(--mono); color: var(--fg); min-width: 0; flex: 1; }
+  .count { font-size: 13px; color: var(--muted); white-space: nowrap; }
+  .panel-body { display: grid; grid-template-columns: 236px 1fr; min-height: 330px; }
+  .list { list-style: none; margin: 0; padding: 8px; border-right: 1px solid var(--line); }
+  .list button {
+    all: unset; box-sizing: border-box; width: 100%; cursor: pointer; display: flex; align-items: center; gap: 10px;
+    padding: 7px 10px; border-radius: 8px; font-size: 14px; color: var(--fg); transition: background-color .12s;
+  }
+  .list button:hover { background: var(--surface-2); }
+  .list button[aria-pressed="true"] { background: rgba(37, 231, 255, .14); }
+  .list .n { width: 14px; font-size: 13px; color: var(--muted); text-align: center; }
+  .list button[aria-pressed="true"] .n { color: var(--cyan); }
+  .list button:focus-visible { outline-offset: -2px; }
+  .result { padding: 18px 22px; min-width: 0; }
+  .res-head { display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; }
+  .state { margin-left: auto; font-size: 13px; font-weight: 500; color: #4BE08A; }
+  .state.busy { color: var(--muted); }
+  .out { margin-top: 12px; font-size: 16px; line-height: 1.6; white-space: pre-wrap; }
+  .caret { display: inline-block; width: 2px; height: 1.1em; margin-left: 1px; vertical-align: -3px; background: var(--cyan); animation: led 1s steps(1) infinite; }
+  .panel-foot { display: flex; gap: 16px; align-items: center; padding: 11px 18px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); flex-wrap: wrap; }
+  .panel-foot .model { margin-left: auto; }
+  .demo-note { margin-top: 18px; font-size: 14px; color: var(--muted); text-align: center; }
+
+  /* Sections, separated by a small sliced sun instead of a rule */
+  section.block { position: relative; padding-block: 112px; }
+  section.block::before {
+    content: ""; position: absolute; top: -9px; left: 50%; width: 36px; height: 18px; translate: -50% 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 18'%3E%3Cpath d='M0 18A18 18 0 0 1 36 18z' fill='%23FF2D75'/%3E%3Crect y='9' width='36' height='1.6' fill='%23120A22'/%3E%3Crect y='12.5' width='36' height='2' fill='%23120A22'/%3E%3C/svg%3E") no-repeat center / contain;
+    opacity: .9;
+  }
+  .block .intro { max-width: 44ch; margin-inline: auto; text-align: center; }
+  .block .intro p { margin-top: 14px; color: var(--muted); }
+
+  .steps { margin-top: 56px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: center; }
+  .steps .keys { font-size: 18px; }
+  .steps h3 { margin-top: 16px; font-size: 21px; font-weight: 600; letter-spacing: -.01em; }
+  .steps p { margin-top: 6px; font-size: 16px; color: var(--muted); max-width: 30ch; margin-inline: auto; }
+
+  .features { margin-top: 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px 56px; }
+  .features h3 { font-size: 21px; font-weight: 600; letter-spacing: -.01em; }
+  .features p { margin-top: 6px; color: var(--muted); font-size: 16px; }
+
+  pre { margin: 0; padding: 18px 20px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); overflow-x: auto; font: 14px/1.7 var(--mono); color: #D8DEEA; }
+  .s { color: var(--sun-1); } .p { color: var(--cyan); } .c { color: var(--muted); }
+  .custom { margin: 44px auto 0; max-width: var(--narrow); }
+
+  .faq { margin-top: 48px; }
+  .faq details { border-radius: 12px; background: var(--surface); }
+  .faq details + details { margin-top: 10px; }
+  .faq summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 22px; font-size: 17px; font-weight: 500; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; font-size: 22px; line-height: 1; color: var(--muted); transition: transform .2s; }
+  .faq details[open] summary::after { transform: rotate(45deg); }
+  .faq details p { padding: 0 22px 20px; color: var(--muted); font-size: 16px; max-width: 62ch; }
+
+  .start pre { margin-top: 40px; }
+  .start .after { margin-top: 18px; font-size: 15px; color: var(--muted); text-align: center; }
+
+  .maker { text-align: center; }
+  .maker .note { margin: 18px auto 0; max-width: 46ch; color: var(--muted); }
+  .contact { margin-top: 28px; display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .contact .addr { font: 500 17px var(--font); user-select: all; padding: 10px 16px; border-radius: 999px; background: var(--surface); }
+
+  footer { padding-block: 40px 48px; }
+  footer .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 14px; color: var(--muted); }
+  footer nav { display: flex; gap: 22px; flex-wrap: wrap; }
+  footer a { text-decoration: none; }
+  footer a:hover { color: var(--fg); }
+
+  @media (max-width: 860px) {
+    .host { display: none; }
+    .panel { grid-column: 1 / -1; margin-top: 0; box-shadow: none; }
+  }
+  @media (max-width: 760px) {
+    .nav-links a:not(.btn) { display: none; }
+    .hero { padding-block: 20px 40px; }
+    .art { width: 112px; }
+    .chrome { filter: drop-shadow(1px 0 0 var(--pink)) drop-shadow(-1px 0 0 var(--pink)) drop-shadow(0 1px 0 var(--pink)) drop-shadow(0 -1px 0 var(--pink)) drop-shadow(2px 2px 0 #7A2E9E) drop-shadow(2px 2px 0 #5A1F80) drop-shadow(2px 2px 0 #3A1360); }
+    .count { display: none; }
+    .panel-body { grid-template-columns: 1fr; }
+    .list { border-right: 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+    .list button { padding: 8px; gap: 8px; }
+    .result { min-height: 210px; }
+    .panel-foot .model { display: none; }
+    section.block { padding-block: 80px; }
+    .steps, .features { grid-template-columns: 1fr; gap: 32px; }
+    pre { white-space: pre-wrap; word-break: break-word; }
+    footer .wrap { flex-direction: column; text-align: center; }
+  }
+  @media (max-width: 420px) { .list { grid-template-columns: 1fr; } }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="sunfill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE38A"/><stop offset=".5" stop-color="#FFA66B"/><stop offset=".95" stop-color="#FF2D75"/>
+    </linearGradient>
+    <linearGradient id="chromefill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".52" stop-color="#D8DEEA"/><stop offset=".54" stop-color="#8E9ABA"/><stop offset="1" stop-color="#EEF2FA"/>
+    </linearGradient>
+    <mask id="slices" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
+      <rect width="200" height="200" fill="#fff"/>
+      <rect y="122" width="200" height="5" fill="#000"/>
+      <rect y="138" width="200" height="8" fill="#000"/>
+      <rect y="157" width="200" height="11" fill="#000"/>
+      <rect y="179" width="200" height="14" fill="#000"/>
+    </mask>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <header class="nav">
+    <a class="brand" href="#top"><img src="favicon.svg" alt="" width="26" height="26">Clipmorph</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-quiet btn-small" href="#start">Get it</a>
+    </nav>
+  </header>
+</div>
+
+<main id="top">
+  <div class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <svg class="art" viewBox="0 0 200 200" aria-hidden="true">
+        <circle cx="100" cy="100" r="92" fill="url(#sunfill)" mask="url(#slices)"/>
+        <g class="bob">
+          <g transform="translate(100 36) scale(.92)" stroke="#2B1450" stroke-width="2.2" stroke-linejoin="round">
+            <rect x="-53" y="56" width="15" height="36" rx="6" fill="url(#chromefill)"/>
+            <rect x="38" y="56" width="15" height="36" rx="6" fill="url(#chromefill)"/>
+            <path d="M-57 92h23v10h-4v10h-4v-8h-7v8h-4v-10h-4z" fill="#8E9ABA" stroke-width="2"/>
+            <path d="M34 92h23v10h-4v10h-4v-8h-7v8h-4v-10h-4z" fill="#8E9ABA" stroke-width="2"/>
+            <path d="M-38 114h76l8 24h-92z" fill="url(#chromefill)"/>
+            <rect x="-46" y="127" width="92" height="4" fill="#FF2D75" stroke="none"/>
+            <rect x="-40" y="52" width="80" height="64" rx="10" fill="url(#chromefill)"/>
+            <rect x="-28" y="62" width="56" height="17" rx="3" fill="#120A22"/>
+            <rect x="-23" y="66" width="24" height="9" rx="1" fill="#25E7FF" stroke="none"/>
+            <g stroke="none">
+              <rect x="-28" y="86" width="9" height="6" rx="1" fill="#2B1450"/>
+              <rect x="-16" y="86" width="9" height="6" rx="1" fill="#2B1450"/>
+              <rect x="-4" y="86" width="9" height="6" rx="1" fill="#2B1450"/>
+              <rect x="8" y="86" width="9" height="6" rx="1" fill="#2B1450"/>
+              <rect class="led" x="20" y="86" width="9" height="6" rx="1" fill="#FF2D75"/>
+            </g>
+            <rect x="-14" y="40" width="28" height="14" fill="#2B1450"/>
+            <rect x="-40" y="0" width="80" height="42" rx="18" fill="url(#chromefill)"/>
+            <circle cx="-17" cy="21" r="15" fill="#120A22"/>
+            <circle cx="17" cy="21" r="15" fill="#120A22"/>
+            <g class="eye" stroke="none">
+              <circle cx="-17" cy="21" r="9" fill="#25E7FF"/><circle cx="17" cy="21" r="9" fill="#25E7FF"/>
+              <circle cx="-17" cy="21" r="4" fill="#120A22"/><circle cx="17" cy="21" r="4" fill="#120A22"/>
+              <circle cx="-21" cy="17" r="2.5" fill="#FFFFFF"/><circle cx="13" cy="17" r="2.5" fill="#FFFFFF"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+      <h1 id="title"><span class="chrome">Clipmorph</span><span class="what">Rewrite anything you copy, without leaving the app you’re in.</span></h1>
+      <p class="lede">Copy text, press <kbd data-key="Alt">⌥</kbd> <kbd data-key=" ">Space</kbd> and pick a recipe. Claude or OpenAI rewrites it, and the result is on your clipboard, ready to paste.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#start">Get Clipmorph</a>
+        <a class="btn btn-quiet" href="#try">Try it below</a>
+      </div>
+      <p class="req">Free · macOS 14+ on Apple silicon · Bring your own Claude or OpenAI key</p>
+    </section>
+  </div>
+
+  <!-- Product scene -->
+  <div class="wrap demo" id="try">
+    <div class="samples" role="group" aria-label="Sample text">
+      <button type="button" data-sample="0" aria-pressed="true">Message</button>
+      <button type="button" data-sample="1" aria-pressed="false">Bug note</button>
+      <button type="button" data-sample="2" aria-pressed="false">French email</button>
+    </div>
+    <div class="scene">
+      <div class="host" aria-hidden="true">
+        <div class="host-bar"><i></i><i></i><i></i><b id="host-app">Mail</b><span id="host-title">New Message</span></div>
+        <div class="host-fields" id="host-fields"></div>
+        <div class="host-body" id="host-body"></div>
+      </div>
+      <div class="panel" id="panel" data-ui role="region" aria-label="Clipmorph panel demo">
+        <div class="panel-head">
+          <svg class="bot" viewBox="0 0 80 66" aria-hidden="true">
+            <rect x="2" y="2" width="76" height="44" rx="18" fill="url(#chromefill)" stroke="#2B1450" stroke-width="3"/>
+            <circle cx="23" cy="24" r="14" fill="#120A22"/><circle cx="57" cy="24" r="14" fill="#120A22"/>
+            <circle class="pupil" cx="23" cy="24" r="8" fill="#25E7FF"/><circle class="pupil" cx="57" cy="24" r="8" fill="#25E7FF"/>
+            <rect x="28" y="46" width="24" height="12" fill="#2B1450"/>
+            <rect x="14" y="58" width="52" height="6" rx="2" fill="#FF2D75"/>
+          </svg>
+          <span class="clip" id="clip"></span>
+          <span class="count" id="count"></span>
+        </div>
+        <div class="panel-body">
+          <ul class="list" id="list" aria-label="Recipes"></ul>
+          <div class="result" aria-live="polite">
+            <div class="res-head"><span id="res-name"></span><span class="state" id="state"></span></div>
+            <p class="out" id="out"></p>
+          </div>
+        </div>
+        <div class="panel-foot">
+          <span><kbd>1</kbd>–<kbd>9</kbd> run</span>
+          <span><kbd data-key="Enter">⏎</kbd> paste</span>
+          <span><kbd data-key="Escape">esc</kbd> close</span>
+          <span class="model">Claude · claude-opus-5-5</span>
+        </div>
+      </div>
+    </div>
+    <p class="demo-note">Pick a sample, then click a recipe or press 1–9. Results are pre-written examples.</p>
+  </div>
+
+  <!-- How it works -->
+  <section class="block" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="intro">
+        <h2 id="how-title">Three keys, no app switching.</h2>
+        <p>Clipmorph lives in the menu bar. Its panel floats over the window you’re in, so your cursor never leaves it.</p>
+      </div>
+      <div class="steps">
+        <div>
+          <div class="keys"><kbd data-key="Meta">⌘</kbd> <kbd data-key="c">C</kbd></div>
+          <h3>Copy</h3>
+          <p>Any text, in any app: an email, a chat message, a rough note.</p>
+        </div>
+        <div>
+          <div class="keys"><kbd data-key="Alt">⌥</kbd> <kbd data-key=" ">Space</kbd></div>
+          <h3>Pick a recipe</h3>
+          <p>The panel opens without taking focus. Press a number key.</p>
+        </div>
+        <div>
+          <div class="keys"><kbd data-key="Enter">⏎</kbd></div>
+          <h3>Paste</h3>
+          <p>The result streams in, lands on your clipboard and can paste itself back.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="block" aria-labelledby="features-title">
+    <div class="wrap narrow">
+      <div class="intro">
+        <h2 id="features-title">Built like a system utility.</h2>
+      </div>
+      <div class="features">
+        <div><h3>Your key, your model</h3><p>Works with Claude or OpenAI. Paste your own API key and choose any model ID.</p></div>
+        <div><h3>Stored in the Keychain</h3><p>API keys live in the macOS login Keychain, not in a settings file.</p></div>
+        <div><h3>No server in between</h3><p>Requests go straight from your Mac to the provider. Nothing passes through us.</p></div>
+        <div><h3>Copied text can’t give orders</h3><p>Your clipboard is sent as text to rewrite. Instructions hidden inside it are ignored.</p></div>
+      </div>
+      <div class="custom">
+        <div class="intro" style="margin-bottom:24px"><p>Nine recipes are built in. Add your own in <code>recipes.json</code> (Settings › Open Recipes File):</p></div>
+<pre><code>[{
+  <span class="p">"id"</span>: <span class="s">"commit-message"</span>,
+  <span class="p">"name"</span>: <span class="s">"Commit message"</span>,
+  <span class="p">"icon"</span>: <span class="s">"arrow.triangle.branch"</span>,
+  <span class="p">"prompt"</span>: <span class="s">"Write a conventional git commit message for this diff."</span>
+}]</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block" id="faq" aria-labelledby="faq-title">
+    <div class="wrap narrow">
+      <div class="intro"><h2 id="faq-title">Questions</h2></div>
+      <div class="faq">
+        <details>
+          <summary>What does it cost?</summary>
+          <p>Clipmorph itself is free. Rewrites use your own Claude or OpenAI API key, so your provider bills you directly for what you use, at their normal rates. There’s no subscription and no account.</p>
+        </details>
+        <details>
+          <summary>Which models does it use?</summary>
+          <p>Claude (claude-opus-5-5 by default) or OpenAI (gpt-5 by default). You can type any other model ID from either provider in Settings.</p>
+        </details>
+        <details>
+          <summary>What happens to the text I copy?</summary>
+          <p>Clipmorph reads the clipboard when you open the panel and sends it to your chosen provider only when you run a recipe. It keeps no history and writes nothing you copy to disk.</p>
+        </details>
+        <details>
+          <summary>Why does it ask for Accessibility access?</summary>
+          <p>Only for auto-paste, which types the result back into the app you were using. It’s off by default. Without it, results are still copied to your clipboard.</p>
+        </details>
+        <details>
+          <summary>macOS says it can’t verify the app. Is that normal?</summary>
+          <p>Yes. Clipmorph isn’t notarized by Apple yet, so the first launch is blocked. Open System Settings › Privacy &amp; Security and click Open Anyway. After that it opens normally.</p>
+        </details>
+        <details>
+          <summary>How do I uninstall it?</summary>
+          <p>Remove your API key in Settings, quit Clipmorph from the menu bar and move the app to the Trash. Custom recipes live in ~/Library/Application Support/Clipmorph.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get it -->
+  <section class="block start" id="start" aria-labelledby="start-title">
+    <div class="wrap narrow">
+      <div class="intro">
+        <h2 id="start-title">Get Clipmorph.</h2>
+        <p>Build it from source with the Swift toolchain. The Command Line Tools are enough, no Xcode needed.</p>
+      </div>
+<pre><code><span class="c"># build the app bundle</span>
+./scripts/build-app.sh
+
+<span class="c"># launch it</span>
+open build/Clipmorph.app</code></pre>
+      <p class="after">On first launch, paste a Claude or OpenAI API key in Settings, then press <kbd data-key="Alt">⌥</kbd> <kbd data-key=" ">Space</kbd>.</p>
+    </div>
+  </section>
+
+  <!-- Maker -->
+  <section class="block maker" id="contact" aria-labelledby="maker-title">
+    <div class="wrap narrow">
+      <h2 id="maker-title">Built by Nico P.</h2>
+      <p class="note">I made Clipmorph because fixing one sentence shouldn’t mean opening a chat window and copying text back and forth. Questions, bugs and recipe ideas are welcome.</p>
+      <div class="contact">
+        <span class="addr" id="addr">nicopassaro@gmail.com</span>
+        <button class="btn btn-quiet btn-small" type="button" id="copy-addr">Copy</button>
+        <a class="btn btn-quiet btn-small" href="mailto:nicopassaro@gmail.com?subject=Clipmorph">Email</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Clipmorph · Version 0.1.0</span>
+    <nav aria-label="Footer">
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#start">Build from source</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const names = ["Fix grammar & spelling", "Make concise", "Professional tone", "Friendly tone", "Summarize as bullets",
+                 "Draft a reply", "Translate to English", "Translate to French", "Translate to Italian"];
+  const samples = [
+    {
+      app: "Mail", title: "New Message", fields: ["To: Sam", "Subject: Wednesday sync"],
+      text: "hey, sorry i cant make the meeting tmrw, somthing came up. can we move it to thurs?",
+      start: 2,
+      out: [
+        "Hey, sorry, I can’t make the meeting tomorrow. Something came up. Can we move it to Thursday?",
+        "Can’t make tomorrow’s meeting. Can we move it to Thursday?",
+        "Hi, apologies, but I won’t be able to attend tomorrow’s meeting due to an unexpected conflict. Would Thursday work for you instead?",
+        "Hey! So sorry, something came up and I can’t make tomorrow’s meeting. Any chance we could move it to Thursday?",
+        "- Can’t attend tomorrow’s meeting\n- Something unexpected came up\n- Suggests moving it to Thursday",
+        "No problem, thanks for letting me know. Thursday works for me. Does [time] suit you?",
+        "Hey, sorry, I can’t make the meeting tomorrow. Something came up. Can we move it to Thursday?",
+        "Salut, désolé, je ne peux pas venir à la réunion demain, j’ai un imprévu. On peut la décaler à jeudi ?",
+        "Ciao, scusa, domani non riesco a venire alla riunione, mi è capitato un imprevisto. Possiamo spostarla a giovedì?",
+      ],
+    },
+    {
+      app: "Issue tracker", title: "New issue", fields: ["Project: Web app", "Title: CSV export"],
+      text: "the export to csv breaks when a name has a comma in it, the row gets split in two. started tuesday i think",
+      start: 4,
+      out: [
+        "The export to CSV breaks when a name has a comma in it: the row gets split in two. I think it started on Tuesday.",
+        "CSV export splits rows when a name contains a comma. Started around Tuesday.",
+        "We’ve identified an issue with the CSV export: when a name contains a comma, the row is split in two. The problem appears to have started on Tuesday.",
+        "Heads up! The CSV export trips over names with commas and splits those rows in two. Looks like it started Tuesday.",
+        "- CSV export breaks on names that contain a comma\n- Affected rows are split in two\n- Likely started on Tuesday",
+        "Thanks for flagging this. We’ll look into the CSV export and how it handles commas in names. Could you send an example file from [date]?",
+        "The export to CSV breaks when a name has a comma in it: the row gets split in two. I think it started on Tuesday.",
+        "L’export CSV ne fonctionne pas quand un nom contient une virgule : la ligne est coupée en deux. Je crois que ça a commencé mardi.",
+        "L’esportazione in CSV si rompe quando un nome contiene una virgola: la riga viene divisa in due. Credo sia iniziato martedì.",
+      ],
+    },
+    {
+      app: "Mail", title: "Reply", fields: ["To: Atelier Dubois", "Subject: Re: Devis"],
+      text: "bonjour, je voulais savoir si le devis est tjr valable le mois prochain ou si les prix vont changer. merci",
+      start: 2,
+      out: [
+        "Bonjour, je voulais savoir si le devis est toujours valable le mois prochain ou si les prix vont changer. Merci.",
+        "Bonjour, le devis reste-t-il valable le mois prochain, ou les prix vont-ils changer ? Merci.",
+        "Bonjour, pourriez-vous me confirmer si votre devis reste valable le mois prochain, ou si une évolution des tarifs est prévue ? Je vous remercie.",
+        "Bonjour ! Petite question : le devis est-il toujours valable le mois prochain, ou les prix vont-ils bouger ? Merci beaucoup !",
+        "- Demande si le devis est encore valable le mois prochain\n- Demande si les prix vont changer",
+        "Bonjour, merci pour votre message. Le devis reste valable jusqu’au [date] ; au-delà, les prix pourront être révisés. Bonne journée.",
+        "Hello, I wanted to know whether the quote is still valid next month or if the prices will change. Thanks.",
+        "Bonjour, je voulais savoir si le devis est toujours valable le mois prochain ou si les prix vont changer. Merci.",
+        "Buongiorno, volevo sapere se il preventivo è ancora valido il mese prossimo o se i prezzi cambieranno. Grazie.",
+      ],
+    },
+  ];
+
+  const $ = id => document.getElementById(id);
+  const panel = $("panel"), list = $("list"), out = $("out"), nameEl = $("res-name"), state = $("state");
+  const hostBody = $("host-body"), scene = $("try");
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const wait = ms => new Promise(r => setTimeout(r, ms));
+  let sample = 0, token = 0;
+
+  const buttons = names.map((name, i) => {
+    const li = document.createElement("li");
+    const b = document.createElement("button");
+    b.type = "button";
+    b.innerHTML = `<span class="n">${i + 1}</span><span></span>`;
+    b.lastChild.textContent = name;
+    b.addEventListener("click", () => run(i));
+    li.append(b); list.append(li);
+    return b;
+  });
+
+  function showHost(text, highlight) {
+    hostBody.textContent = "";
+    if (highlight) { const m = document.createElement("mark"); m.textContent = text; hostBody.append(m); }
+    else hostBody.textContent = text;
+  }
+
+  function loadSample(s, animate) {
+    sample = s;
+    const d = samples[s];
+    document.querySelectorAll("[data-sample]").forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.sample === s)));
+    $("host-app").textContent = d.app;
+    $("host-title").textContent = d.title;
+    $("host-fields").innerHTML = "";
+    d.fields.forEach(f => { const div = document.createElement("div"); div.textContent = f; $("host-fields").append(div); });
+    showHost(d.text, true);
+    $("clip").textContent = d.text;
+    $("count").textContent = `${d.text.length} characters`;
+    if (animate) run(d.start);
+    else { select(d.start); nameEl.textContent = names[d.start]; out.textContent = d.out[d.start]; done(false); }
+  }
+
+  function select(i) { buttons.forEach((b, j) => b.setAttribute("aria-pressed", String(i === j))); }
+
+  async function run(i) {
+    const my = ++token;
+    const text = samples[sample].out[i];
+    select(i);
+    nameEl.textContent = names[i];
+    showHost(samples[sample].text, true);
+    if (reduce) { out.textContent = text; done(true); return; }
+    panel.classList.add("busy");
+    state.textContent = "Writing…"; state.className = "state busy";
+    out.textContent = "";
+    const caret = document.createElement("span"); caret.className = "caret";
+    await wait(280);
+    for (const w of text.split(/(\s+)/)) {
+      if (my !== token) return;
+      out.textContent += w; out.append(caret);
+      await wait(w.trim() ? 38 : 0);
+    }
+    if (my !== token) return;
+    caret.remove(); done(true);
+    // Paste back into the app underneath, like auto-paste does.
+    await wait(900);
+    if (my !== token) return;
+    showHost(text, false);
+    hostBody.classList.remove("pasted"); void hostBody.offsetWidth; hostBody.classList.add("pasted");
+  }
+  function done(fresh) {
+    panel.classList.remove("busy");
+    state.textContent = "Copied"; state.className = "state";
+  }
+
+  document.querySelectorAll("[data-sample]").forEach(b => b.addEventListener("click", () => loadSample(+b.dataset.sample, true)));
+  loadSample(0, false);
+
+  // Number keys run recipes while the demo is on screen; keycaps on the page press down with the real keys.
+  let inView = false;
+  new IntersectionObserver(([e]) => { inView = e.isIntersecting; }, { threshold: .3 }).observe(scene);
+  const caps = key => document.querySelectorAll(`kbd[data-key="${CSS.escape(key)}"]`);
+  addEventListener("keydown", e => {
+    caps(e.key.length === 1 ? e.key.toLowerCase() : e.key).forEach(k => k.classList.add("down"));
+    if (!inView || e.metaKey || e.ctrlKey || e.altKey) return;
+    const n = Number(e.key);
+    if (n >= 1 && n <= 9) { run(n - 1); buttons[n - 1].focus({ preventScroll: true }); }
+  });
+  addEventListener("keyup", e => {
+    caps(e.key.length === 1 ? e.key.toLowerCase() : e.key).forEach(k => k.classList.remove("down"));
+    if (e.key === "Meta" || e.key === "Alt") document.querySelectorAll("kbd.down").forEach(k => k.classList.remove("down"));
+  });
+  addEventListener("blur", () => document.querySelectorAll("kbd.down").forEach(k => k.classList.remove("down")));
+
+  // Copy the contact address; fall back to selecting it.
+  $("copy-addr").addEventListener("click", async e => {
+    const btn = e.currentTarget;
+    try { await navigator.clipboard.writeText($("addr").textContent); btn.textContent = "Copied"; }
+    catch { const r = document.createRange(); r.selectNodeContents($("addr")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Selected"; }
+    setTimeout(() => { btn.textContent = "Copy"; }, 1600);
+  });
+})();
+</script>
+</body>
+</html>

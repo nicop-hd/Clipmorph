@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "cd /private/tmp/claude-501/-Users-nicopassaro-Documents-Dev-Clipmorph/ecb7e073-0675-4d34-923b-50c234ab916c/scratchpad/site && exec python3 -m http.server 4321"
+      ],
+      "port": 4321
+    }
+  ]
+}

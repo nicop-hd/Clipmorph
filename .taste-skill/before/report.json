@@ -1,0 +1,2414 @@
+{
+ "url": "site/index.html",
+ "at": "2026-10-19T13:22:15.405Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.37,
+    0.35,
+    0.69,
+    0.35,
+    0.29,
+    0.2
+   ],
+   "motion": {
+    "elements": 13,
+    "css": 5,
+    "transitions": 8,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5303,
+     "screens": 5.9,
+     "words": 738,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "📋",
+      "✓",
+      "✂",
+      "💼",
+      "☺",
+      "🌐"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CLIPMORPH",
+     "words": 1,
+     "chars": 9,
+     "lines": 1,
+     "size": 132,
+     "vw": 9.2,
+     "font": "Exo 2",
+     "weight": 900,
+     "tracking": 0.02,
+     "leading": 1,
+     "upper": true,
+     "italic": true,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.78,
+     "top": 398,
+     "gradientText": true,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CLIPMORPH",
+     "words": 1,
+     "lines": 1,
+     "size": 132,
+     "font": "Exo 2"
+    },
+    "headings": [
+     {
+      "text": "CLIPMORPH",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 132,
+      "vw": 9.2,
+      "font": "Exo 2",
+      "weight": 900,
+      "tracking": 0.02,
+      "leading": 1,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 398,
+      "gradientText": true,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Copy. Summon. Morph.",
+      "words": 3,
+      "chars": 20,
+      "lines": 1,
+      "size": 46,
+      "vw": 3.2,
+      "font": "Exo 2",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.35,
+      "top": 1132,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Small app, lots of tricks.",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 46,
+      "vw": 3.2,
+      "font": "Exo 2",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 1814,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Nine morphs, ready to go.",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 46,
+      "vw": 3.2,
+      "font": "Exo 2",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 2915,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Build it in a minute.",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 46,
+      "vw": 3.2,
+      "font": "Exo 2",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.5,
+      "top": 4283,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "BUILT BY NICO P.",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 58,
+      "vw": 4,
+      "font": "Exo 2",
+      "weight": 900,
+      "tracking": 0.02,
+      "leading": 1,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 5009,
+      "gradientText": true,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 3,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Exo 2",
+       "share": 0.88,
+       "mono": false
+      },
+      {
+       "family": "monospace",
+       "share": 0.06,
+       "mono": false
+      },
+      {
+       "family": "JetBrains Mono",
+       "share": 0.06,
+       "mono": true
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      22,
+      25,
+      46,
+      58,
+      132
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Exo 2",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.5
+     },
+     "measureChars": 73,
+     "max": {
+      "size": 132,
+      "vw": 9.2,
+      "font": "Exo 2",
+      "text": "Clipmorph"
+     },
+     "monoShare": 0.12,
+     "monoProseShare": 0.05,
+     "monoFamilies": [
+      "JetBrains Mono",
+      "monospace"
+     ],
+     "monoSamples": [
+      "How it works",
+      "hey, sorry i cant make the meeting tmrw,",
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "microLabels": 6,
+     "microLabelShare": 0.02,
+     "microSamples": [
+      "How it works",
+      "Features",
+      "Built-in recipes",
+      "Get started",
+      "The maker",
+      "// HANDCRAFTED IN SWIFT"
+     ],
+     "upperShare": 0.03,
+     "centerShare": 0.18,
+     "smallText": 2
+    },
+    "eyebrows": [
+     {
+      "text": "How it works",
+      "above": "Copy. Summon. Morph.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 13,
+      "top": 1101
+     },
+     {
+      "text": "Features",
+      "above": "Small app, lots of tricks.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 13,
+      "top": 1783
+     },
+     {
+      "text": "Built-in recipes",
+      "above": "Nine morphs, ready to go.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 13,
+      "top": 2884
+     },
+     {
+      "text": "Get started",
+      "above": "Build it in a minute.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 13,
+      "top": 4253
+     },
+     {
+      "text": "The maker",
+      "above": "BUILT BY NICO P.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 13,
+      "top": 4988
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#130b22",
+     "bodyBgHsl": {
+      "h": 261,
+      "s": 0.51,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#a99cc5",
+       "share": 0.66
+      },
+      {
+       "color": "#ece8f6",
+       "share": 0.24
+      },
+      {
+       "color": "#ffe38a",
+       "share": 0.05
+      },
+      {
+       "color": "#25e7ff",
+       "share": 0.02
+      },
+      {
+       "color": "#d8deea",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ffa76a",
+      "hsl": {
+       "h": 25,
+       "s": 1,
+       "l": 0.71
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 53,
+     "withShadow": 1,
+     "withGradient": 1,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get Clipmorph",
+      "See how it works"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 3,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "a.btn.btn-primary → rgb(255, 45, 117) 0px 8px 30px -8px",
+      "div#demo.panel → rgb(0, 0, 0) 0px 40px 80px -30px, rgba(0, 0, 0, 0.267) 0px 0px 0px 1px, rgba(255",
+      "div.sun → rgba(255, 45, 117, 0.35) 0px 0px 80px 0px"
+     ],
+     "gradients": 9,
+     "scrims": 2,
+     "gradientSamples": [
+      "article.card → linear-gradient(rgb(26, 15, 51), rgb(18, 10, 34))",
+      "article.card → linear-gradient(rgb(26, 15, 51), rgb(18, 10, 34))",
+      "article.card → linear-gradient(rgb(26, 15, 51), rgb(18, 10, 34))",
+      "article.card → linear-gradient(rgb(26, 15, 51), rgb(18, 10, 34))"
+     ],
+     "gradientText": 2,
+     "hairlines": 4,
+     "hairlineSamples": [
+      "nav 1440px",
+      "div.panel-head 571px",
+      "div.panel-foot 571px",
+      "footer 1440px"
+     ],
+     "outlinedBoxes": 15,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 15,
+     "boxRadius": 18,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 9,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 1975
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 3926
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.08
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": true,
+     "height": 61,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "exo 2",
+     "jetbrains mono"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5303,
+    "margins": {
+     "left": 160,
+     "right": 189
+    },
+    "sections": [
+     {
+      "sel": "header#top.hero",
+      "tag": "header",
+      "top": 61,
+      "height": 956,
+      "words": 55,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Clipmorph",
+       "size": 132,
+       "tag": "h1"
+      },
+      "left": 319,
+      "right": 335,
+      "textLeft": 319,
+      "textRight": 335,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#how",
+      "tag": "section",
+      "top": 1017,
+      "height": 682,
+      "words": 144,
+      "media": 0,
+      "middle": 67,
+      "heading": {
+       "text": "Copy. Summon. Morph.",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 177,
+      "textLeft": 160,
+      "textRight": 177,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#features",
+      "tag": "section",
+      "top": 1699,
+      "height": 1101,
+      "words": 212,
+      "media": 0,
+      "middle": 75,
+      "heading": {
+       "text": "Small app, lots of tricks.",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 198,
+      "textLeft": 160,
+      "textRight": 198,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#recipes",
+      "tag": "section",
+      "top": 2800,
+      "height": 555,
+      "words": 49,
+      "media": 0,
+      "middle": 177,
+      "heading": {
+       "text": "Nine morphs, ready to go.",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 325,
+      "textLeft": 160,
+      "textRight": 325,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 3356,
+      "height": 570,
+      "words": 82,
+      "media": 0,
+      "middle": 90,
+      "heading": {
+       "text": "Make your own recipes",
+       "size": 22,
+       "tag": "h3"
+      },
+      "left": 189,
+      "right": 203,
+      "textLeft": 189,
+      "textRight": 203,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 3925,
+      "height": 244,
+      "words": 54,
+      "media": 0,
+      "middle": 79,
+      "heading": null,
+      "left": 185,
+      "right": 189,
+      "textLeft": 185,
+      "textRight": 189,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#start",
+      "tag": "section",
+      "top": 4169,
+      "height": 563,
+      "words": 50,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Build it in a minute.",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 377,
+      "right": 410,
+      "textLeft": 377,
+      "textRight": 410,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.builder",
+      "tag": "section",
+      "top": 4732,
+      "height": 493,
+      "words": 35,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Built by Nico P.",
+       "size": 58,
+       "tag": "h2"
+      },
+      "left": 452,
+      "right": 452,
+      "textLeft": 452,
+      "textRight": 452,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CLIPMORPH",
+      "size": 132,
+      "top": 398,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 187,
+      "n": 7
+     },
+     {
+      "x": 160,
+      "n": 6
+     },
+     {
+      "x": 566,
+      "n": 6
+     },
+     {
+      "x": 946,
+      "n": 6
+     },
+     {
+      "x": 760,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 26,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.18,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 300,
+     "h": 780
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.36,
+    0.57,
+    0.8,
+    0.59,
+    0.62,
+    0.29,
+    0.33
+   ],
+   "motion": {
+    "elements": 9,
+    "css": 5,
+    "transitions": 4,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 6624,
+     "screens": 6.5,
+     "words": 738,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "📋",
+      "✓",
+      "✂",
+      "💼",
+      "☺",
+      "🌐"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CLIPMORPH",
+     "words": 1,
+     "chars": 9,
+     "lines": 1,
+     "size": 99.8,
+     "vw": 13,
+     "font": "Exo 2",
+     "weight": 900,
+     "tracking": 0.02,
+     "leading": 1,
+     "upper": true,
+     "italic": true,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.96,
+     "top": 398,
+     "gradientText": true,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CLIPMORPH",
+     "words": 1,
+     "lines": 1,
+     "size": 99.8,
+     "font": "Exo 2"
+    },
+    "headings": [
+     {
+      "text": "CLIPMORPH",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 99.8,
+      "vw": 13,
+      "font": "Exo 2",
+      "weight": 900,
+      "tracking": 0.02,
+      "leading": 1,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 398,
+      "gradientText": true,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Copy. Summon. Morph.",
+      "words": 3,
+      "chars": 20,
+      "lines": 1,
+      "size": 33.8,
+      "vw": 4.4,
+      "font": "Exo 2",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1089,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Small app, lots of tricks.",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 33.8,
+      "vw": 4.4,
+      "font": "Exo 2",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2112,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Nine morphs, ready to go.",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 33.8,
+      "vw": 4.4,
+      "font": "Exo 2",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 3689,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Build it in a minute.",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 33.8,
+      "vw": 4.4,
+      "font": "Exo 2",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 5631,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "BUILT BY NICO P.",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 46.1,
+      "vw": 6,
+      "font": "Exo 2",
+      "weight": 900,
+      "tracking": 0.02,
+      "leading": 1,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 6343,
+      "gradientText": true,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 3,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Exo 2",
+       "share": 0.88,
+       "mono": false
+      },
+      {
+       "family": "monospace",
+       "share": 0.06,
+       "mono": false
+      },
+      {
+       "family": "JetBrains Mono",
+       "share": 0.06,
+       "mono": true
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      22,
+      34,
+      46,
+      100
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Exo 2",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.5
+     },
+     "measureChars": 73,
+     "max": {
+      "size": 99.8,
+      "vw": 13,
+      "font": "Exo 2",
+      "text": "Clipmorph"
+     },
+     "monoShare": 0.12,
+     "monoProseShare": 0.05,
+     "monoFamilies": [
+      "JetBrains Mono",
+      "monospace"
+     ],
+     "monoSamples": [
+      "How it works",
+      "hey, sorry i cant make the meeting tmrw,",
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "microLabels": 6,
+     "microLabelShare": 0.02,
+     "microSamples": [
+      "How it works",
+      "Features",
+      "Built-in recipes",
+      "Get started",
+      "The maker",
+      "// HANDCRAFTED IN SWIFT"
+     ],
+     "upperShare": 0.03,
+     "centerShare": 0.18,
+     "smallText": 2
+    },
+    "eyebrows": [
+     {
+      "text": "How it works",
+      "above": "Copy. Summon. Morph.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 13,
+      "top": 1059
+     },
+     {
+      "text": "Features",
+      "above": "Small app, lots of tricks.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 13,
+      "top": 2081
+     },
+     {
+      "text": "Built-in recipes",
+      "above": "Nine morphs, ready to go.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 13,
+      "top": 3658
+     },
+     {
+      "text": "Get started",
+      "above": "Build it in a minute.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 13,
+      "top": 5600
+     },
+     {
+      "text": "The maker",
+      "above": "BUILT BY NICO P.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 13,
+      "top": 6322
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#130b22",
+     "bodyBgHsl": {
+      "h": 261,
+      "s": 0.51,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1a0e32",
+       "top": 4338,
+       "hsl": {
+        "h": 260,
+        "s": 0.56,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#a99cc5",
+       "share": 0.66
+      },
+      {
+       "color": "#ece8f6",
+       "share": 0.24
+      },
+      {
+       "color": "#ffe38a",
+       "share": 0.05
+      },
+      {
+       "color": "#25e7ff",
+       "share": 0.02
+      },
+      {
+       "color": "#d8deea",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ffa76a",
+      "hsl": {
+       "h": 25,
+       "s": 1,
+       "l": 0.71
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 53,
+     "withShadow": 1,
+     "withGradient": 1,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get Clipmorph",
+      "See how it works"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 3,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "a.btn.btn-primary → rgb(255, 45, 117) 0px 8px 30px -8px",
+      "div#demo.panel → rgb(0, 0, 0) 0px 40px 80px -30px, rgba(0, 0, 0, 0.267) 0px 0px 0px 1px, rgba(255",
+      "div.sun → rgba(255, 45, 117, 0.35) 0px 0px 80px 0px"
+     ],
+     "gradients": 10,
+     "scrims": 2,
+     "gradientSamples": [
+      "article.card → linear-gradient(rgb(26, 15, 51), rgb(18, 10, 34))",
+      "article.card → linear-gradient(rgb(26, 15, 51), rgb(18, 10, 34))",
+      "article.card → linear-gradient(rgb(26, 15, 51), rgb(18, 10, 34))",
+      "article.card → linear-gradient(rgb(26, 15, 51), rgb(18, 10, 34))"
+     ],
+     "gradientText": 2,
+     "hairlines": 4,
+     "hairlineSamples": [
+      "nav 768px",
+      "div.panel-head 734px",
+      "div.panel-foot 734px",
+      "footer 768px"
+     ],
+     "outlinedBoxes": 15,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 15,
+     "boxRadius": 18,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 9,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 2259
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 5169
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.13
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": true,
+     "height": 61,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "exo 2",
+     "jetbrains mono"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 6624,
+    "margins": {
+     "left": 16,
+     "right": 33
+    },
+    "sections": [
+     {
+      "sel": "header#top.hero",
+      "tag": "header",
+      "top": 61,
+      "height": 914,
+      "words": 55,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Clipmorph",
+       "size": 100,
+       "tag": "h1"
+      },
+      "left": 76,
+      "right": 76,
+      "textLeft": 76,
+      "textRight": 76,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#how",
+      "tag": "section",
+      "top": 975,
+      "height": 1022,
+      "words": 144,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Copy. Summon. Morph.",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 24,
+      "textLeft": 16,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#features",
+      "tag": "section",
+      "top": 1997,
+      "height": 1577,
+      "words": 212,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Small app, lots of tricks.",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 44,
+      "textLeft": 16,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#recipes",
+      "tag": "section",
+      "top": 3574,
+      "height": 680,
+      "words": 49,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Nine morphs, ready to go.",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 123,
+      "textLeft": 16,
+      "textRight": 123,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 4254,
+      "height": 914,
+      "words": 82,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Make your own recipes",
+       "size": 22,
+       "tag": "h3"
+      },
+      "left": 45,
+      "right": 53,
+      "textLeft": 45,
+      "textRight": 53,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 5168,
+      "height": 348,
+      "words": 54,
+      "media": 0,
+      "middle": 53,
+      "heading": null,
+      "left": 41,
+      "right": 63,
+      "textLeft": 41,
+      "textRight": 63,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#start",
+      "tag": "section",
+      "top": 5516,
+      "height": 550,
+      "words": 50,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Build it in a minute.",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 41,
+      "right": 74,
+      "textLeft": 41,
+      "textRight": 74,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.builder",
+      "tag": "section",
+      "top": 6066,
+      "height": 480,
+      "words": 35,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Built by Nico P.",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 116,
+      "right": 116,
+      "textLeft": 116,
+      "textRight": 116,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CLIPMORPH",
+      "size": 100,
+      "top": 398,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 43,
+      "n": 12
+     },
+     {
+      "x": 420,
+      "n": 8
+     },
+     {
+      "x": 16,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 26,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    0.5,
+    0.44,
+    0.69,
+    0.91,
+    0.86,
+    0.62,
+    0.77,
+    0.64,
+    0.38,
+    0.39
+   ],
+   "motion": {
+    "elements": 13,
+    "css": 5,
+    "transitions": 8,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 8181,
+     "screens": 9.7,
+     "words": 729,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [
+      "📋",
+      "✓",
+      "✂",
+      "💼",
+      "☺",
+      "🌐"
+     ],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CLIPMORPH",
+     "words": 1,
+     "chars": 9,
+     "lines": 1,
+     "size": 54,
+     "vw": 13.8,
+     "font": "Exo 2",
+     "weight": 900,
+     "tracking": 0.02,
+     "leading": 1,
+     "upper": true,
+     "italic": true,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 353,
+     "gradientText": true,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CLIPMORPH",
+     "words": 1,
+     "lines": 1,
+     "size": 54,
+     "font": "Exo 2"
+    },
+    "headings": [
+     {
+      "text": "CLIPMORPH",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 54,
+      "vw": 13.8,
+      "font": "Exo 2",
+      "weight": 900,
+      "tracking": 0.02,
+      "leading": 1,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 353,
+      "gradientText": true,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Copy. Summon. Morph.",
+      "words": 3,
+      "chars": 20,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Exo 2",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1045,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Small app, lots of tricks.",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Exo 2",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2211,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Nine morphs, ready to go.",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Exo 2",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4696,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Make your own recipes",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Exo 2",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.6,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.8,
+      "top": 5617,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Keyboard first",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Exo 2",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.6,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.8,
+      "top": 6022,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Build it in a minute.",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Exo 2",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 7148,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "BUILT BY NICO P.",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Exo 2",
+      "weight": 900,
+      "tracking": 0.02,
+      "leading": 1,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 7857,
+      "gradientText": true,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 3,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Exo 2",
+       "share": 0.88,
+       "mono": false
+      },
+      {
+       "family": "monospace",
+       "share": 0.06,
+       "mono": false
+      },
+      {
+       "family": "JetBrains Mono",
+       "share": 0.06,
+       "mono": true
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      19,
+      22,
+      30,
+      34,
+      54
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Exo 2",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.5
+     },
+     "measureChars": 45,
+     "max": {
+      "size": 54,
+      "vw": 13.8,
+      "font": "Exo 2",
+      "text": "Clipmorph"
+     },
+     "monoShare": 0.12,
+     "monoProseShare": 0.05,
+     "monoFamilies": [
+      "JetBrains Mono",
+      "monospace"
+     ],
+     "monoSamples": [
+      "How it works",
+      "hey, sorry i cant make the meeting tmrw,",
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "microLabels": 6,
+     "microLabelShare": 0.02,
+     "microSamples": [
+      "How it works",
+      "Features",
+      "Built-in recipes",
+      "Get started",
+      "The maker",
+      "// HANDCRAFTED IN SWIFT"
+     ],
+     "upperShare": 0.03,
+     "centerShare": 0.18,
+     "smallText": 2
+    },
+    "eyebrows": [
+     {
+      "text": "How it works",
+      "above": "Copy. Summon. Morph.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 13,
+      "top": 1015
+     },
+     {
+      "text": "Features",
+      "above": "Small app, lots of tricks.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 13,
+      "top": 2181
+     },
+     {
+      "text": "Built-in recipes",
+      "above": "Nine morphs, ready to go.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 13,
+      "top": 4665
+     },
+     {
+      "text": "Get started",
+      "above": "Build it in a minute.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 13,
+      "top": 7118
+     },
+     {
+      "text": "The maker",
+      "above": "BUILT BY NICO P.",
+      "upper": true,
+      "tracked": true,
+      "mono": true,
+      "pill": false,
+      "size": 13,
+      "top": 7836
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#130b22",
+     "bodyBgHsl": {
+      "h": 261,
+      "s": 0.51,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1a0e32",
+       "top": 5594,
+       "hsl": {
+        "h": 260,
+        "s": 0.56,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#a99cc5",
+       "share": 0.65
+      },
+      {
+       "color": "#ece8f6",
+       "share": 0.25
+      },
+      {
+       "color": "#ffe38a",
+       "share": 0.05
+      },
+      {
+       "color": "#25e7ff",
+       "share": 0.02
+      },
+      {
+       "color": "#d8deea",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ffa76a",
+      "hsl": {
+       "h": 25,
+       "s": 1,
+       "l": 0.71
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 1,
+     "withGradient": 1,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get Clipmorph",
+      "See how it works"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 3,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "a.btn.btn-primary → rgb(255, 45, 117) 0px 8px 30px -8px",
+      "div#demo.panel → rgb(0, 0, 0) 0px 40px 80px -30px, rgba(0, 0, 0, 0.267) 0px 0px 0px 1px, rgba(255",
+      "div.sun → rgba(255, 45, 117, 0.35) 0px 0px 80px 0px"
+     ],
+     "gradients": 11,
+     "scrims": 2,
+     "gradientSamples": [
+      "a.btn.btn-primary → linear-gradient(rgb(255, 166, 107), rgb(255, 45, 117))",
+      "article.card → linear-gradient(rgb(26, 15, 51), rgb(18, 10, 34))",
+      "article.card → linear-gradient(rgb(26, 15, 51), rgb(18, 10, 34))",
+      "article.card → linear-gradient(rgb(26, 15, 51), rgb(18, 10, 34))"
+     ],
+     "gradientText": 2,
+     "hairlines": 4,
+     "hairlineSamples": [
+      "nav 390px",
+      "div.panel-head 356px",
+      "div.panel-foot 356px",
+      "footer 390px"
+     ],
+     "outlinedBoxes": 15,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 15,
+     "boxRadius": 18,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.23
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 61,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "exo 2",
+     "jetbrains mono"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 8181,
+    "margins": {
+     "left": 16,
+     "right": 18
+    },
+    "sections": [
+     {
+      "sel": "header#top.hero",
+      "tag": "header",
+      "top": 61,
+      "height": 890,
+      "words": 55,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Clipmorph",
+       "size": 54,
+       "tag": "h1"
+      },
+      "left": 17,
+      "right": 17,
+      "textLeft": 17,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#how",
+      "tag": "section",
+      "top": 951,
+      "height": 1166,
+      "words": 143,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Copy. Summon. Morph.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 17,
+      "textLeft": 16,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#features",
+      "tag": "section",
+      "top": 2117,
+      "height": 2485,
+      "words": 212,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Small app, lots of tricks.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 20,
+      "textLeft": 16,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#recipes",
+      "tag": "section",
+      "top": 4601,
+      "height": 928,
+      "words": 49,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Nine morphs, ready to go.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 18,
+      "textLeft": 16,
+      "textRight": 18,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 5530,
+      "height": 972,
+      "words": 82,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Make your own recipes",
+       "size": 22,
+       "tag": "h3"
+      },
+      "left": 39,
+      "right": 3,
+      "textLeft": 39,
+      "textRight": 3,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 6501,
+      "height": 552,
+      "words": 54,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 41,
+      "right": 52,
+      "textLeft": 41,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#start",
+      "tag": "section",
+      "top": 7054,
+      "height": 526,
+      "words": 50,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Build it in a minute.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 23,
+      "right": 23,
+      "textLeft": 23,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.builder",
+      "tag": "section",
+      "top": 7580,
+      "height": 489,
+      "words": 35,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Built by Nico P.",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CLIPMORPH",
+      "size": 54,
+      "top": 353,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "\"Write a conventional git commit message for this ",
+      "side": "right",
+      "px": 3
+     }
+    ],
+    "edges": [
+     {
+      "x": 39,
+      "n": 20
+     },
+     {
+      "x": 16,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 26,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "5 eyebrow/kicker label(s) above headings: \"How it works\" above \"Copy. Summon. Morph.\"; \"Features\" above \"Small app, lots of tricks.\"; \"Built-in recipes\" above \"Nine morphs, ready to go.\"; \"Get started\" above \"Build it in a minute.\"; \"The maker\" above \"BUILT BY NICO P.\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "mono",
+   "width": 1440,
+   "message": "Monospace type outside code: JetBrains Mono, monospace — e.g. \"How it works\", \"hey, sorry i cant make the meeting tmrw,\", \"1\", \"2\"",
+   "fix": "Set it in the text face. Monospace is for literal code inside <pre>/<code> only.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "6 tiny uppercase letter-spaced labels (e.g. \"How it works\", \"Features\", \"Built-in recipes\", \"Get started\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "emoji",
+   "width": 1440,
+   "message": "Emoji in the page: 📋 ✓ ✂ 💼 ☺ 🌐",
+   "fix": "Remove. Use words or real imagery.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "9 gradient fill(s): article.card → linear-gradient(rgb(26, 15, 51), rgb(18, 10, 34)) | article.card → linear-gradient(rgb(26, 15, 51), rgb(18, 10, 34)) | article.card → linear-gradient(rgb(26, 15, 51), rgb(18, 10, 34))",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient-text",
+   "width": 1440,
+   "message": "2 gradient-filled text element(s).",
+   "fix": "Solid colour text.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "3 box-shadow(s) on elements at rest: a.btn.btn-primary → rgb(255, 45, 117) 0px 8px 30px -8px | div#demo.panel → rgb(0, 0, 0) 0px 40px 80px -30px, rgba(0, 0, 0, 0.267) 0px 0px 0px 1px, rgba(255 | div.sun → rgba(255, 45, 117, 0.35) 0px 0px 80px 0px",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "button-fx",
+   "width": 1440,
+   "message": "Buttons with gradient fill and shadow/glow.",
+   "fix": "Flat fill, one colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "4 thin rule(s)/divider line(s): nav 1440px | div.panel-head 571px | div.panel-foot 571px | footer 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "15 boxes drawn with a 1px outline.",
+   "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "icon-cards",
+   "width": 1440,
+   "message": "1 row(s) of identical cards each topped with a small icon (9 cards).",
+   "fix": "Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "font-count",
+   "width": 1440,
+   "message": "3 typefaces in use (Exo 2, monospace, JetBrains Mono).",
+   "fix": "Two at most.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "13 different font sizes (11, 12, 13, 14, 15, 16, 17, 19, 22, 25, 46, 58, 132).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "small-text",
+   "width": 1440,
+   "message": "2 text block(s) under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 160px on the left, 189px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Little motion: 13 element(s) moved while the page loaded and scrolled.",
+   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
+  },
+  {
+   "level": "FAIL",
+   "id": "edge-text",
+   "width": 390,
+   "message": "1 text block(s) sit within 12px of the screen edge: \"\"Write a conventional git comm\" (3px from the right)",
+   "fix": "Keep text inside the page margin (16–20px). Only display type deliberately bled past the edge may touch it."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/before/desktop-fold.jpg",
+   "pages": [
+    "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/before/desktop-page-01.jpg",
+    "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/before/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/before/tablet-fold.jpg",
+   "pages": [
+    "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/before/tablet-page-01.jpg",
+    "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/before/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/before/mobile-fold.jpg",
+   "pages": [
+    "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/before/mobile-page-01.jpg",
+    "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/before/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

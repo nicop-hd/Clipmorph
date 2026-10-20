@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE38A"/>
+      <stop offset=".45" stop-color="#FFA66B"/>
+      <stop offset=".85" stop-color="#FF2D75"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".52" stop-color="#D8DEEA"/>
+      <stop offset=".54" stop-color="#8E9ABA"/>
+      <stop offset="1" stop-color="#EEF2FA"/>
+    </linearGradient>
+    <clipPath id="tile">
+      <rect x="100" y="100" width="824" height="824" rx="185"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#tile)">
+    <rect x="100" y="100" width="824" height="824" fill="url(#sun)"/>
+
+    <g fill="#1E0C38">
+      <rect x="100" y="520" width="824" height="12"/>
+      <rect x="100" y="585" width="824" height="20"/>
+      <rect x="100" y="652" width="824" height="30"/>
+      <rect x="100" y="725" width="824" height="42"/>
+    </g>
+    <rect x="100" y="805" width="824" height="119" fill="#120A22"/>
+    <rect x="100" y="802" width="824" height="5" fill="#FF2D75"/>
+    <ellipse cx="512" cy="810" rx="290" ry="22" fill="#000000" opacity=".45"/>
+
+    <g transform="translate(512,170) scale(4.6)" stroke="#2B1450" stroke-width="2.2" stroke-linejoin="round">
+      <rect x="-53" y="56" width="15" height="36" rx="6" fill="url(#chrome)"/>
+      <rect x="38" y="56" width="15" height="36" rx="6" fill="url(#chrome)"/>
+      <path d="M-57 92h23v10h-4v10h-4v-8h-7v8h-4v-10h-4z" fill="#8E9ABA" stroke-width="2"/>
+      <path d="M34 92h23v10h-4v10h-4v-8h-7v8h-4v-10h-4z" fill="#8E9ABA" stroke-width="2"/>
+      <path d="M-38 114h76l8 24h-92z" fill="url(#chrome)"/>
+      <rect x="-46" y="127" width="92" height="4" fill="#FF2D75" stroke="none"/>
+      <rect x="-40" y="52" width="80" height="64" rx="10" fill="url(#chrome)"/>
+      <rect x="-28" y="62" width="56" height="17" rx="3" fill="#120A22"/>
+      <rect x="-23" y="66" width="24" height="9" rx="1" fill="#25E7FF" stroke="none"/>
+      <g stroke="none">
+        <rect x="-28" y="86" width="9" height="6" rx="1" fill="#2B1450"/>
+        <rect x="-16" y="86" width="9" height="6" rx="1" fill="#2B1450"/>
+        <rect x="-4" y="86" width="9" height="6" rx="1" fill="#2B1450"/>
+        <rect x="8" y="86" width="9" height="6" rx="1" fill="#2B1450"/>
+        <rect x="20" y="86" width="9" height="6" rx="1" fill="#FF2D75"/>
+      </g>
+      <rect x="-14" y="40" width="28" height="14" fill="#2B1450"/>
+      <rect x="-40" y="0" width="80" height="42" rx="18" fill="url(#chrome)"/>
+      <circle cx="-17" cy="21" r="15" fill="#120A22"/>
+      <circle cx="17" cy="21" r="15" fill="#120A22"/>
+      <g stroke="none">
+        <circle cx="-17" cy="21" r="9" fill="#25E7FF"/>
+        <circle cx="17" cy="21" r="9" fill="#25E7FF"/>
+        <circle cx="-17" cy="21" r="4" fill="#120A22"/>
+        <circle cx="17" cy="21" r="4" fill="#120A22"/>
+        <circle cx="-21" cy="17" r="2.5" fill="#FFFFFF"/>
+        <circle cx="13" cy="17" r="2.5" fill="#FFFFFF"/>
+      </g>
+    </g>
+  </g>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="none" stroke="#FFFFFF" stroke-opacity=".12" stroke-width="2"/>
+</svg>

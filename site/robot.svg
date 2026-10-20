@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-72 -4 144 144">
+  <defs>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".52" stop-color="#D8DEEA"/>
+      <stop offset=".54" stop-color="#8E9ABA"/>
+      <stop offset="1" stop-color="#EEF2FA"/>
+    </linearGradient>
+  </defs>
+  <g stroke="#2B1450" stroke-width="4" stroke-linejoin="round">
+    <rect x="-53" y="56" width="15" height="36" rx="6" fill="url(#chrome)"/>
+    <rect x="38" y="56" width="15" height="36" rx="6" fill="url(#chrome)"/>
+    <path d="M-38 114h76l8 24h-92z" fill="url(#chrome)"/>
+    <rect x="-46" y="125" width="92" height="6" fill="#FF2D75" stroke="none"/>
+    <rect x="-40" y="52" width="80" height="64" rx="10" fill="url(#chrome)"/>
+    <rect x="-28" y="62" width="56" height="18" rx="3" fill="#120A22"/>
+    <rect x="-22" y="66" width="26" height="10" rx="1" fill="#25E7FF" stroke="none"/>
+    <rect x="-14" y="40" width="28" height="14" fill="#2B1450"/>
+    <rect x="-40" y="0" width="80" height="42" rx="18" fill="url(#chrome)"/>
+    <circle cx="-17" cy="21" r="15" fill="#120A22"/>
+    <circle cx="17" cy="21" r="15" fill="#120A22"/>
+    <g stroke="none">
+      <circle cx="-17" cy="21" r="10" fill="#25E7FF"/>
+      <circle cx="17" cy="21" r="10" fill="#25E7FF"/>
+      <circle cx="-17" cy="21" r="4.5" fill="#120A22"/>
+      <circle cx="17" cy="21" r="4.5" fill="#120A22"/>
+    </g>
+  </g>
+</svg>

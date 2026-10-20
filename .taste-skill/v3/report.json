@@ -1,0 +1,1891 @@
+{
+ "url": "site/index.html",
+ "at": "2026-10-20T08:16:44.224Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.28,
+    0.29,
+    0.19,
+    0.29,
+    0.22,
+    0.15
+   ],
+   "motion": {
+    "elements": 3,
+    "css": 3,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4738,
+     "screens": 5.3,
+     "words": 507,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 3,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CLIPMORPH",
+     "words": 1,
+     "chars": 9,
+     "lines": 1,
+     "size": 72,
+     "vw": 5,
+     "font": "Exo 2",
+     "weight": 900,
+     "tracking": 0.01,
+     "leading": 1,
+     "upper": true,
+     "italic": true,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.3,
+     "top": 198,
+     "gradientText": true,
+     "tag": "span",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CLIPMORPH Rewrite anything you copy, without leaving the app you’re in.",
+     "words": 11,
+     "lines": 3,
+     "size": 34,
+     "font": "IBM Plex Sans"
+    },
+    "headings": [
+     {
+      "text": "CLIPMORPH",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "Exo 2",
+      "weight": 900,
+      "tracking": 0.01,
+      "leading": 1,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.3,
+      "top": 198,
+      "gradientText": true,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Three keys, no app switching.",
+      "words": 5,
+      "chars": 29,
+      "lines": 2,
+      "size": 46,
+      "vw": 3.2,
+      "font": "IBM Plex Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.31,
+      "top": 1470,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Built like a system utility.",
+      "words": 5,
+      "chars": 28,
+      "lines": 2,
+      "size": 46,
+      "vw": 3.2,
+      "font": "IBM Plex Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.31,
+      "top": 2055,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 46,
+      "vw": 3.2,
+      "font": "IBM Plex Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.31,
+      "top": 2961,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Get Clipmorph.",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 46,
+      "vw": 3.2,
+      "font": "IBM Plex Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.31,
+      "top": 3713,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Built by Nico P.",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 46,
+      "vw": 3.2,
+      "font": "IBM Plex Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.47,
+      "top": 4295,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 6,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "IBM Plex Sans",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "IBM Plex Mono",
+       "share": 0.09,
+       "mono": true
+      },
+      {
+       "family": "Exo 2",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      21,
+      36,
+      46,
+      72
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "IBM Plex Sans",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.9
+     },
+     "measureChars": 74,
+     "max": {
+      "size": 72,
+      "vw": 5,
+      "font": "Exo 2",
+      "text": "Clipmorph"
+     },
+     "monoShare": 0.09,
+     "monoProseShare": 0.02,
+     "monoFamilies": [
+      "IBM Plex Mono"
+     ],
+     "monoSamples": [
+      "hey, sorry i cant make the meeting tmrw,"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.34,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#120b23",
+     "bodyBgHsl": {
+      "h": 258,
+      "s": 0.52,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#aaa1c8",
+       "share": 0.66
+      },
+      {
+       "color": "#f0ecfb",
+       "share": 0.25
+      },
+      {
+       "color": "#ffe28b",
+       "share": 0.03
+      },
+      {
+       "color": "#24202e",
+       "share": 0.02
+      },
+      {
+       "color": "#d8deea",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#1b1130",
+      "hsl": {
+       "h": 259,
+       "s": 0.48,
+       "l": 0.13
+      },
+      "fg": "#f0ecfb"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 4,
+     "radius": "pill",
+     "height": 36,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get it",
+      "Get Clipmorph",
+      "Try it below",
+      "Message"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 1,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "div 693px",
+      "div 693px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "exo 2",
+     "ibm plex mono",
+     "ibm plex sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4738,
+    "margins": {
+     "left": 218,
+     "right": 219
+    },
+    "sections": [
+     {
+      "sel": "div.wrap",
+      "tag": "div",
+      "top": 64,
+      "height": 526,
+      "words": 54,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Clipmorph",
+       "size": 72,
+       "tag": "h1"
+      },
+      "left": 458,
+      "right": 458,
+      "textLeft": 458,
+      "textRight": 458,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div#try.wrap.demo",
+      "tag": "div",
+      "top": 590,
+      "height": 769,
+      "words": 122,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 218,
+      "right": 219,
+      "textLeft": 218,
+      "textRight": 219,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#how.block",
+      "tag": "section",
+      "top": 1358,
+      "height": 585,
+      "words": 68,
+      "media": 0,
+      "middle": 17,
+      "heading": {
+       "text": "Three keys, no app switching.",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 229,
+      "right": 232,
+      "textLeft": 229,
+      "textRight": 232,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.block",
+      "tag": "section",
+      "top": 1943,
+      "height": 906,
+      "words": 114,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Built like a system utility.",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 380,
+      "right": 390,
+      "textLeft": 380,
+      "textRight": 390,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.block",
+      "tag": "section",
+      "top": 2849,
+      "height": 752,
+      "words": 204,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 402,
+      "right": 490,
+      "textLeft": 402,
+      "textRight": 490,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#start.block.start",
+      "tag": "section",
+      "top": 3601,
+      "height": 582,
+      "words": 46,
+      "media": 0,
+      "middle": 33,
+      "heading": {
+       "text": "Get Clipmorph.",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 401,
+      "right": 446,
+      "textLeft": 401,
+      "textRight": 446,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.block.maker",
+      "tag": "section",
+      "top": 4183,
+      "height": 444,
+      "words": 33,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Built by Nico P.",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 504,
+      "right": 504,
+      "textLeft": 504,
+      "textRight": 504,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CLIPMORPH Rewrite anything you copy, without leaving the app you’re in.",
+      "size": 34,
+      "top": 192,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 402,
+      "n": 6
+     },
+     {
+      "x": 380,
+      "n": 4
+     },
+     {
+      "x": 748,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 14,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.19,
+    "voidBox": {
+     "x": 1020,
+     "y": 120,
+     "w": 420,
+     "h": 600
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.54,
+    0.23,
+    0.51,
+    0.46,
+    0.33
+   ],
+   "motion": {
+    "elements": 3,
+    "css": 3,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 4425,
+     "screens": 4.3,
+     "words": 482,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 3,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CLIPMORPH",
+     "words": 1,
+     "chars": 9,
+     "lines": 1,
+     "size": 46.1,
+     "vw": 6,
+     "font": "Exo 2",
+     "weight": 900,
+     "tracking": 0.01,
+     "leading": 1,
+     "upper": true,
+     "italic": true,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.36,
+     "top": 198,
+     "gradientText": true,
+     "tag": "span",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CLIPMORPH Rewrite anything you copy, without leaving the app you’re in.",
+     "words": 11,
+     "lines": 3,
+     "size": 34,
+     "font": "IBM Plex Sans"
+    },
+    "headings": [
+     {
+      "text": "CLIPMORPH",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 46.1,
+      "vw": 6,
+      "font": "Exo 2",
+      "weight": 900,
+      "tracking": 0.01,
+      "leading": 1,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.36,
+      "top": 198,
+      "gradientText": true,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Three keys, no app switching.",
+      "words": 5,
+      "chars": 29,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "IBM Plex Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.58,
+      "top": 1322,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Built like a system utility.",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "IBM Plex Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.58,
+      "top": 1864,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "IBM Plex Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.58,
+      "top": 2702,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Get Clipmorph.",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "IBM Plex Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.58,
+      "top": 3436,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Built by Nico P.",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "IBM Plex Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 4001,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 6,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "IBM Plex Sans",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "IBM Plex Mono",
+       "share": 0.09,
+       "mono": true
+      },
+      {
+       "family": "Exo 2",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      21,
+      26,
+      30,
+      46
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "IBM Plex Sans",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.9
+     },
+     "measureChars": 74,
+     "max": {
+      "size": 46.1,
+      "vw": 6,
+      "font": "Exo 2",
+      "text": "Clipmorph"
+     },
+     "monoShare": 0.09,
+     "monoProseShare": 0.02,
+     "monoFamilies": [
+      "IBM Plex Mono"
+     ],
+     "monoSamples": [
+      "hey, sorry i cant make the meeting tmrw,"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.35,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#120b23",
+     "bodyBgHsl": {
+      "h": 258,
+      "s": 0.52,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1b1130",
+       "top": 597,
+       "hsl": {
+        "h": 259,
+        "s": 0.48,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#aaa1c8",
+       "share": 0.68
+      },
+      {
+       "color": "#f0ecfb",
+       "share": 0.26
+      },
+      {
+       "color": "#ffe28b",
+       "share": 0.03
+      },
+      {
+       "color": "#d8deea",
+       "share": 0.02
+      },
+      {
+       "color": "#24e6ff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#1b1130",
+      "hsl": {
+       "h": 259,
+       "s": 0.48,
+       "l": 0.13
+      },
+      "fg": "#f0ecfb"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 4,
+     "radius": "pill",
+     "height": 36,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get it",
+      "Get Clipmorph",
+      "Try it below",
+      "Message"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 1,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "exo 2",
+     "ibm plex mono",
+     "ibm plex sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 4425,
+    "margins": {
+     "left": 29,
+     "right": 36
+    },
+    "sections": [
+     {
+      "sel": "div.wrap",
+      "tag": "div",
+      "top": 64,
+      "height": 473,
+      "words": 54,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Clipmorph",
+       "size": 46,
+       "tag": "h1"
+      },
+      "left": 140,
+      "right": 140,
+      "textLeft": 140,
+      "textRight": 140,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div#try.wrap.demo",
+      "tag": "div",
+      "top": 537,
+      "height": 673,
+      "words": 98,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 29,
+      "right": 39,
+      "textLeft": 63,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#how.block",
+      "tag": "section",
+      "top": 1210,
+      "height": 543,
+      "words": 68,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Three keys, no app switching.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 21,
+      "right": 29,
+      "textLeft": 21,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.block",
+      "tag": "section",
+      "top": 1752,
+      "height": 838,
+      "words": 114,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Built like a system utility.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 44,
+      "right": 54,
+      "textLeft": 44,
+      "textRight": 54,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.block",
+      "tag": "section",
+      "top": 2590,
+      "height": 734,
+      "words": 204,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 66,
+      "right": 154,
+      "textLeft": 66,
+      "textRight": 154,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#start.block.start",
+      "tag": "section",
+      "top": 3324,
+      "height": 564,
+      "words": 46,
+      "media": 0,
+      "middle": 33,
+      "heading": {
+       "text": "Get Clipmorph.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 65,
+      "right": 110,
+      "textLeft": 65,
+      "textRight": 110,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.block.maker",
+      "tag": "section",
+      "top": 3889,
+      "height": 427,
+      "words": 33,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Built by Nico P.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 168,
+      "right": 168,
+      "textLeft": 168,
+      "textRight": 168,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CLIPMORPH Rewrite anything you copy, without leaving the app you’re in.",
+      "size": 34,
+      "top": 192,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 66,
+      "n": 6
+     },
+     {
+      "x": 44,
+      "n": 4
+     },
+     {
+      "x": 412,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 14,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.53,
+    0.71,
+    0.32,
+    0.58,
+    0.66,
+    0.46,
+    0.41
+   ],
+   "motion": {
+    "elements": 3,
+    "css": 3,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 5354,
+     "screens": 6.3,
+     "words": 473,
+     "img": 1,
+     "video": 0,
+     "canvas": 0,
+     "svg": 3,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CLIPMORPH",
+     "words": 1,
+     "chars": 9,
+     "lines": 1,
+     "size": 44,
+     "vw": 11.3,
+     "font": "Exo 2",
+     "weight": 900,
+     "tracking": 0.01,
+     "leading": 1,
+     "upper": true,
+     "italic": true,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.68,
+     "top": 202,
+     "gradientText": true,
+     "tag": "span",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CLIPMORPH Rewrite anything you copy, without leaving the app you’re in.",
+     "words": 11,
+     "lines": 4,
+     "size": 34,
+     "font": "IBM Plex Sans"
+    },
+    "headings": [
+     {
+      "text": "CLIPMORPH",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 44,
+      "vw": 11.3,
+      "font": "Exo 2",
+      "weight": 900,
+      "tracking": 0.01,
+      "leading": 1,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.68,
+      "top": 202,
+      "gradientText": true,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Three keys, no app switching.",
+      "words": 5,
+      "chars": 29,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "IBM Plex Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1663,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Built like a system utility.",
+      "words": 5,
+      "chars": 28,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "IBM Plex Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2512,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "IBM Plex Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3547,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Get Clipmorph.",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "IBM Plex Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4271,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Built by Nico P.",
+      "words": 4,
+      "chars": 16,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "IBM Plex Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4823,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 6,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "IBM Plex Sans",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "IBM Plex Mono",
+       "share": 0.09,
+       "mono": true
+      },
+      {
+       "family": "Exo 2",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      21,
+      26,
+      30,
+      44
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "IBM Plex Sans",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.9
+     },
+     "measureChars": 44,
+     "max": {
+      "size": 44,
+      "vw": 11.3,
+      "font": "Exo 2",
+      "text": "Clipmorph"
+     },
+     "monoShare": 0.09,
+     "monoProseShare": 0.02,
+     "monoFamilies": [
+      "IBM Plex Mono"
+     ],
+     "monoSamples": [
+      "hey, sorry i cant make the meeting tmrw,"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.37,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#120b23",
+     "bodyBgHsl": {
+      "h": 258,
+      "s": 0.52,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1b1130",
+       "top": 682,
+       "hsl": {
+        "h": 259,
+        "s": 0.48,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#aaa1c8",
+       "share": 0.67
+      },
+      {
+       "color": "#f0ecfb",
+       "share": 0.26
+      },
+      {
+       "color": "#ffe28b",
+       "share": 0.03
+      },
+      {
+       "color": "#d8deea",
+       "share": 0.02
+      },
+      {
+       "color": "#24e6ff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#1b1130",
+      "hsl": {
+       "h": 259,
+       "s": 0.48,
+       "l": 0.13
+      },
+      "fg": "#f0ecfb"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 4,
+     "radius": "pill",
+     "height": 36,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get it",
+      "Get Clipmorph",
+      "Try it below",
+      "Message"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 1,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 5,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": false,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "exo 2",
+     "ibm plex mono",
+     "ibm plex sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 5354,
+    "margins": {
+     "left": 20,
+     "right": 22
+    },
+    "sections": [
+     {
+      "sel": "div.wrap",
+      "tag": "div",
+      "top": 64,
+      "height": 558,
+      "words": 54,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Clipmorph",
+       "size": 44,
+       "tag": "h1"
+      },
+      "left": 21,
+      "right": 21,
+      "textLeft": 21,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div#try.wrap.demo",
+      "tag": "div",
+      "top": 622,
+      "height": 961,
+      "words": 93,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 23,
+      "right": 23,
+      "textLeft": 23,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how.block",
+      "tag": "section",
+      "top": 1583,
+      "height": 848,
+      "words": 68,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Three keys, no app switching.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 37,
+      "right": 37,
+      "textLeft": 37,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.block",
+      "tag": "section",
+      "top": 2432,
+      "height": 1035,
+      "words": 114,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Built like a system utility.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 22,
+      "textLeft": 20,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.block",
+      "tag": "section",
+      "top": 3467,
+      "height": 725,
+      "words": 177,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 42,
+      "right": 43,
+      "textLeft": 42,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#start.block.start",
+      "tag": "section",
+      "top": 4191,
+      "height": 552,
+      "words": 46,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Get Clipmorph.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 21,
+      "right": 21,
+      "textLeft": 21,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.block.maker",
+      "tag": "section",
+      "top": 4743,
+      "height": 463,
+      "words": 33,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Built by Nico P.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 41,
+      "right": 41,
+      "textLeft": 41,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 5206,
+      "height": 149,
+      "words": 14,
+      "media": 0,
+      "middle": 12,
+      "heading": null,
+      "left": 28,
+      "right": 28,
+      "textLeft": 28,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CLIPMORPH Rewrite anything you copy, without leaving the app you’re in.",
+      "size": 34,
+      "top": 196,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 8
+     },
+     {
+      "x": 42,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 14,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "mono",
+   "width": 1440,
+   "message": "Monospace type outside code: IBM Plex Mono — e.g. \"hey, sorry i cant make the meeting tmrw,\"",
+   "fix": "Set it in the text face. Monospace is for literal code inside <pre>/<code> only.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient-text",
+   "width": 1440,
+   "message": "1 gradient-filled text element(s).",
+   "fix": "Solid colour text.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "2 thin rule(s)/divider line(s): div 693px | div 693px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields."
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "2 box(es) drawn with a 1px outline.",
+   "fix": "Prefer a filled surface or no box.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 1 picture(s) on the page (0 photographs, footage or raster images, 1 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "untitled-section",
+   "width": 1440,
+   "message": "A section carries text but no heading: div#try.wrap.demo at 590px.",
+   "fix": "Name it with a short heading unless it is the continuation of the section above.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 3 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "FAIL",
+   "id": "empty-screens",
+   "width": 1440,
+   "message": "2 of 6 desktop screens are almost empty ground (under 20% of the screen holds text, a picture or a colour field): screens 3, 6.",
+   "fix": "An empty screen is a rest only once per page. Elsewhere it means the section is underbuilt: set its content larger, give it the full information, put it on a colour field, or cut it."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/v3/desktop-fold.jpg",
+   "pages": [
+    "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/v3/desktop-page-01.jpg",
+    "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/v3/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/v3/tablet-fold.jpg",
+   "pages": [
+    "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/v3/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/v3/mobile-fold.jpg",
+   "pages": [
+    "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/v3/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

@@ -1,0 +1,1805 @@
+{
+ "url": "site/index.html",
+ "at": "2026-10-19T14:42:07.671Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.24,
+    0.32,
+    0.06,
+    0.19,
+    0.11
+   ],
+   "motion": {
+    "elements": 3,
+    "css": 3,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4213,
+     "screens": 4.7,
+     "words": 404,
+     "img": 2,
+     "video": 0,
+     "canvas": 0,
+     "svg": 2,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CLIPMORPH",
+     "words": 1,
+     "chars": 9,
+     "lines": 1,
+     "size": 104,
+     "vw": 7.2,
+     "font": "Exo 2",
+     "weight": 900,
+     "tracking": 0.01,
+     "leading": 1,
+     "upper": true,
+     "italic": true,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.43,
+     "top": 348,
+     "gradientText": true,
+     "tag": "span",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CLIPMORPH AI for your Mac’s clipboard.",
+     "words": 6,
+     "lines": 2,
+     "size": 34,
+     "font": "Exo 2"
+    },
+    "headings": [
+     {
+      "text": "CLIPMORPH",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 104,
+      "vw": 7.2,
+      "font": "Exo 2",
+      "weight": 900,
+      "tracking": 0.01,
+      "leading": 1,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.43,
+      "top": 348,
+      "gradientText": true,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Three keys, no app switching.",
+      "words": 5,
+      "chars": 29,
+      "lines": 2,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Exo 2",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.24,
+      "top": 1543,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Small, fast, yours.",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Exo 2",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.24,
+      "top": 2110,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Nine recipes built in.",
+      "words": 4,
+      "chars": 22,
+      "lines": 2,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Exo 2",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.24,
+      "top": 2649,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Get Clipmorph.",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Exo 2",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.24,
+      "top": 3493,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 5,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Exo 2",
+       "share": 0.85,
+       "mono": false
+      },
+      {
+       "family": "JetBrains Mono",
+       "share": 0.15,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      28,
+      40,
+      104
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Exo 2",
+      "size": 15,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.8
+     },
+     "measureChars": 55,
+     "max": {
+      "size": 104,
+      "vw": 7.2,
+      "font": "Exo 2",
+      "text": "Clipmorph"
+     },
+     "monoShare": 0.15,
+     "monoProseShare": 0.04,
+     "monoFamilies": [
+      "JetBrains Mono"
+     ],
+     "monoSamples": [
+      "hey, sorry i cant make the meeting tmrw,"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.45,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#130b22",
+     "bodyBgHsl": {
+      "h": 261,
+      "s": 0.51,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1b1130",
+       "top": 790,
+       "hsl": {
+        "h": 259,
+        "s": 0.48,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#aaa0c9",
+       "share": 0.53
+      },
+      {
+       "color": "#f0edfa",
+       "share": 0.37
+      },
+      {
+       "color": "#fee28a",
+       "share": 0.05
+      },
+      {
+       "color": "#d8deea",
+       "share": 0.03
+      },
+      {
+       "color": "#25e6fe",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#1b1130",
+      "hsl": {
+       "h": 259,
+       "s": 0.48,
+       "l": 0.13
+      },
+      "fg": "#f0edfa"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get it",
+      "Get Clipmorph",
+      "Try a recipe"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 1,
+     "hairlines": 5,
+     "hairlineSamples": [
+      "section#how.block 1440px",
+      "section.block 1440px",
+      "section#recipes.block 1440px",
+      "section#start.block.start 1440px",
+      "footer 1440px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "exo 2",
+     "jetbrains mono"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4213,
+    "margins": {
+     "left": 241,
+     "right": 251
+    },
+    "sections": [
+     {
+      "sel": "div.wrap",
+      "tag": "div",
+      "top": 64,
+      "height": 726,
+      "words": 43,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Clipmorph",
+       "size": 104,
+       "tag": "h1"
+      },
+      "left": 409,
+      "right": 421,
+      "textLeft": 409,
+      "textRight": 421,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div#try.wrap.demo",
+      "tag": "div",
+      "top": 790,
+      "height": 640,
+      "words": 88,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 241,
+      "right": 251,
+      "textLeft": 251,
+      "textRight": 251,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how.block",
+      "tag": "section",
+      "top": 1430,
+      "height": 567,
+      "words": 62,
+      "media": 0,
+      "middle": 58,
+      "heading": {
+       "text": "Three keys, no app switching.",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 254,
+      "right": 261,
+      "textLeft": 254,
+      "textRight": 261,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.block",
+      "tag": "section",
+      "top": 1997,
+      "height": 539,
+      "words": 74,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Small, fast, yours.",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 400,
+      "right": 414,
+      "textLeft": 400,
+      "textRight": 414,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#recipes.block",
+      "tag": "section",
+      "top": 2536,
+      "height": 844,
+      "words": 73,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Nine recipes built in.",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 408,
+      "right": 408,
+      "textLeft": 408,
+      "textRight": 408,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#start.block.start",
+      "tag": "section",
+      "top": 3380,
+      "height": 574,
+      "words": 42,
+      "media": 0,
+      "middle": 6,
+      "heading": {
+       "text": "Get Clipmorph.",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 421,
+      "right": 454,
+      "textLeft": 421,
+      "textRight": 454,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 3954,
+      "height": 259,
+      "words": 12,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 583,
+      "right": 583,
+      "textLeft": 583,
+      "textRight": 583,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CLIPMORPH AI for your Mac’s clipboard.",
+      "size": 34,
+      "top": 340,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 400,
+      "n": 4
+     },
+     {
+      "x": 748,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 8,
+    "bodySize": 17,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.21,
+    "voidBox": {
+     "x": 1020,
+     "y": 120,
+     "w": 420,
+     "h": 660
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.4,
+    0.28,
+    0.26,
+    0.26,
+    0.26
+   ],
+   "motion": {
+    "elements": 3,
+    "css": 3,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 4102,
+     "screens": 4,
+     "words": 404,
+     "img": 2,
+     "video": 0,
+     "canvas": 0,
+     "svg": 2,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CLIPMORPH",
+     "words": 1,
+     "chars": 9,
+     "lines": 1,
+     "size": 76.8,
+     "vw": 10,
+     "font": "Exo 2",
+     "weight": 900,
+     "tracking": 0.01,
+     "leading": 1,
+     "upper": true,
+     "italic": true,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.6,
+     "top": 348,
+     "gradientText": true,
+     "tag": "span",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CLIPMORPH AI for your Mac’s clipboard.",
+     "words": 6,
+     "lines": 2,
+     "size": 34,
+     "font": "Exo 2"
+    },
+    "headings": [
+     {
+      "text": "CLIPMORPH",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 76.8,
+      "vw": 10,
+      "font": "Exo 2",
+      "weight": 900,
+      "tracking": 0.01,
+      "leading": 1,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.6,
+      "top": 348,
+      "gradientText": true,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Three keys, no app switching.",
+      "words": 5,
+      "chars": 29,
+      "lines": 2,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Exo 2",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.45,
+      "top": 1524,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Small, fast, yours.",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Exo 2",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.45,
+      "top": 2087,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Nine recipes built in.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Exo 2",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.45,
+      "top": 2612,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Get Clipmorph.",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Exo 2",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.45,
+      "top": 3396,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 5,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Exo 2",
+       "share": 0.85,
+       "mono": false
+      },
+      {
+       "family": "JetBrains Mono",
+       "share": 0.15,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      22,
+      28,
+      77
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Exo 2",
+      "size": 15,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.8
+     },
+     "measureChars": 55,
+     "max": {
+      "size": 76.8,
+      "vw": 10,
+      "font": "Exo 2",
+      "text": "Clipmorph"
+     },
+     "monoShare": 0.15,
+     "monoProseShare": 0.04,
+     "monoFamilies": [
+      "JetBrains Mono"
+     ],
+     "monoSamples": [
+      "hey, sorry i cant make the meeting tmrw,"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.45,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#130b22",
+     "bodyBgHsl": {
+      "h": 261,
+      "s": 0.51,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1b1130",
+       "top": 749,
+       "hsl": {
+        "h": 259,
+        "s": 0.48,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#aaa0c9",
+       "share": 0.53
+      },
+      {
+       "color": "#f0edfa",
+       "share": 0.37
+      },
+      {
+       "color": "#fee28a",
+       "share": 0.05
+      },
+      {
+       "color": "#d8deea",
+       "share": 0.03
+      },
+      {
+       "color": "#25e6fe",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#1b1130",
+      "hsl": {
+       "h": 259,
+       "s": 0.48,
+       "l": 0.13
+      },
+      "fg": "#f0edfa"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get it",
+      "Get Clipmorph",
+      "Try a recipe"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 1,
+     "hairlines": 5,
+     "hairlineSamples": [
+      "section#how.block 768px",
+      "section.block 768px",
+      "section#recipes.block 768px",
+      "section#start.block.start 768px",
+      "footer 768px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "exo 2",
+     "jetbrains mono"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 4102,
+    "margins": {
+     "left": 31,
+     "right": 41
+    },
+    "sections": [
+     {
+      "sel": "div.wrap",
+      "tag": "div",
+      "top": 64,
+      "height": 685,
+      "words": 43,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Clipmorph",
+       "size": 77,
+       "tag": "h1"
+      },
+      "left": 154,
+      "right": 162,
+      "textLeft": 154,
+      "textRight": 162,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div#try.wrap.demo",
+      "tag": "div",
+      "top": 749,
+      "height": 661,
+      "words": 88,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 31,
+      "right": 41,
+      "textLeft": 41,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how.block",
+      "tag": "section",
+      "top": 1411,
+      "height": 563,
+      "words": 62,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Three keys, no app switching.",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 28,
+      "textLeft": 22,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.block",
+      "tag": "section",
+      "top": 1974,
+      "height": 525,
+      "words": 74,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Small, fast, yours.",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 64,
+      "right": 78,
+      "textLeft": 64,
+      "textRight": 78,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#recipes.block",
+      "tag": "section",
+      "top": 2499,
+      "height": 784,
+      "words": 73,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Nine recipes built in.",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 72,
+      "right": 72,
+      "textLeft": 72,
+      "textRight": 72,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#start.block.start",
+      "tag": "section",
+      "top": 3283,
+      "height": 561,
+      "words": 42,
+      "media": 0,
+      "middle": 6,
+      "heading": {
+       "text": "Get Clipmorph.",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 85,
+      "right": 118,
+      "textLeft": 85,
+      "textRight": 118,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 3843,
+      "height": 259,
+      "words": 12,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 247,
+      "right": 247,
+      "textLeft": 247,
+      "textRight": 247,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CLIPMORPH AI for your Mac’s clipboard.",
+      "size": 34,
+      "top": 340,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 64,
+      "n": 4
+     },
+     {
+      "x": 412,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 8,
+    "bodySize": 17,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.51,
+    0.64,
+    0.24,
+    0.4,
+    0.51,
+    0.33
+   ],
+   "motion": {
+    "elements": 3,
+    "css": 3,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 4688,
+     "screens": 5.6,
+     "words": 397,
+     "img": 2,
+     "video": 0,
+     "canvas": 0,
+     "svg": 2,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CLIPMORPH",
+     "words": 1,
+     "chars": 9,
+     "lines": 1,
+     "size": 52,
+     "vw": 13.3,
+     "font": "Exo 2",
+     "weight": 900,
+     "tracking": 0.01,
+     "leading": 1,
+     "upper": true,
+     "italic": true,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.8,
+     "top": 284,
+     "gradientText": true,
+     "tag": "span",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CLIPMORPH AI for your Mac’s clipboard.",
+     "words": 6,
+     "lines": 2,
+     "size": 34,
+     "font": "Exo 2"
+    },
+    "headings": [
+     {
+      "text": "CLIPMORPH",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 52,
+      "vw": 13.3,
+      "font": "Exo 2",
+      "weight": 900,
+      "tracking": 0.01,
+      "leading": 1,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.8,
+      "top": 284,
+      "gradientText": true,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Three keys, no app switching.",
+      "words": 5,
+      "chars": 29,
+      "lines": 2,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Exo 2",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 1663,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Small, fast, yours.",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Exo 2",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 2458,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Nine recipes built in.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Exo 2",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 3147,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Get Clipmorph.",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Exo 2",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 3990,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 5,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Exo 2",
+       "share": 0.85,
+       "mono": false
+      },
+      {
+       "family": "JetBrains Mono",
+       "share": 0.15,
+       "mono": true
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      22,
+      28,
+      52
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Exo 2",
+      "size": 15,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.8
+     },
+     "measureChars": 41,
+     "max": {
+      "size": 52,
+      "vw": 13.3,
+      "font": "Exo 2",
+      "text": "Clipmorph"
+     },
+     "monoShare": 0.15,
+     "monoProseShare": 0.04,
+     "monoFamilies": [
+      "JetBrains Mono"
+     ],
+     "monoSamples": [
+      "hey, sorry i cant make the meeting tmrw,"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.46,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#130b22",
+     "bodyBgHsl": {
+      "h": 261,
+      "s": 0.51,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1b1130",
+       "top": 673,
+       "hsl": {
+        "h": 259,
+        "s": 0.48,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#aaa0c9",
+       "share": 0.52
+      },
+      {
+       "color": "#f0edfa",
+       "share": 0.38
+      },
+      {
+       "color": "#fee28a",
+       "share": 0.05
+      },
+      {
+       "color": "#d8deea",
+       "share": 0.03
+      },
+      {
+       "color": "#25e6fe",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#1b1130",
+      "hsl": {
+       "h": 259,
+       "s": 0.48,
+       "l": 0.13
+      },
+      "fg": "#f0edfa"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get it",
+      "Get Clipmorph",
+      "Try a recipe"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 1,
+     "hairlines": 5,
+     "hairlineSamples": [
+      "section#how.block 390px",
+      "section.block 390px",
+      "section#recipes.block 390px",
+      "section#start.block.start 390px",
+      "footer 390px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": false,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "exo 2",
+     "jetbrains mono"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 4688,
+    "margins": {
+     "left": 20,
+     "right": 23
+    },
+    "sections": [
+     {
+      "sel": "div.wrap",
+      "tag": "div",
+      "top": 64,
+      "height": 609,
+      "words": 43,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Clipmorph",
+       "size": 52,
+       "tag": "h1"
+      },
+      "left": 28,
+      "right": 28,
+      "textLeft": 28,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div#try.wrap.demo",
+      "tag": "div",
+      "top": 673,
+      "height": 910,
+      "words": 85,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 29,
+      "right": 29,
+      "textLeft": 29,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#how.block",
+      "tag": "section",
+      "top": 1582,
+      "height": 795,
+      "words": 62,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Three keys, no app switching.",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 33,
+      "right": 33,
+      "textLeft": 33,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.block",
+      "tag": "section",
+      "top": 2377,
+      "height": 689,
+      "words": 74,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Small, fast, yours.",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 22,
+      "textLeft": 20,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#recipes.block",
+      "tag": "section",
+      "top": 3066,
+      "height": 844,
+      "words": 73,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Nine recipes built in.",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 23,
+      "right": 23,
+      "textLeft": 23,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#start.block.start",
+      "tag": "section",
+      "top": 3909,
+      "height": 521,
+      "words": 42,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Get Clipmorph.",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 4430,
+      "height": 259,
+      "words": 12,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 58,
+      "right": 58,
+      "textLeft": 58,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CLIPMORPH AI for your Mac’s clipboard.",
+      "size": 34,
+      "top": 276,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 8
+     }
+    ],
+    "leftBlocks": 8,
+    "bodySize": 17,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "mono",
+   "width": 1440,
+   "message": "Monospace type outside code: JetBrains Mono — e.g. \"hey, sorry i cant make the meeting tmrw,\"",
+   "fix": "Set it in the text face. Monospace is for literal code inside <pre>/<code> only.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient-text",
+   "width": 1440,
+   "message": "1 gradient-filled text element(s).",
+   "fix": "Solid colour text.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "5 thin rule(s)/divider line(s): section#how.block 1440px | section.block 1440px | section#recipes.block 1440px | section#start.block.start 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "2 box(es) drawn with a 1px outline.",
+   "fix": "Prefer a filled surface or no box.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "10 different font sizes (13, 14, 15, 16, 17, 18, 20, 28, 40, 104).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 15px.",
+   "fix": "Body copy 16–20px.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 1 picture(s) on the page (0 photographs, footage or raster images, 1 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 3 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "FAIL",
+   "id": "empty-screens",
+   "width": 1440,
+   "message": "3 of 5 desktop screens are almost empty ground (under 20% of the screen holds text, a picture or a colour field): screens 3, 4, 5.",
+   "fix": "An empty screen is a rest only once per page. Elsewhere it means the section is underbuilt: set its content larger, give it the full information, put it on a colour field, or cut it."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/minimal/desktop-fold.jpg",
+   "pages": [
+    "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/minimal/desktop-page-01.jpg",
+    "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/minimal/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/minimal/tablet-fold.jpg",
+   "pages": [
+    "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/minimal/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/minimal/mobile-fold.jpg",
+   "pages": [
+    "/Users/nicopassaro/Documents/Dev/Clipmorph/.taste-skill/minimal/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
