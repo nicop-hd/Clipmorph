@@ -27,6 +27,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(withTitle: "Transform Clipboard  ⌥Space", action: #selector(showPanel), keyEquivalent: "")
         menu.addItem(.separator())
         menu.addItem(withTitle: "Settings…", action: #selector(showSettings), keyEquivalent: ",")
+        menu.addItem(withTitle: "Buy Me a Coffee…", action: #selector(openBuyMeACoffee), keyEquivalent: "")
         menu.addItem(.separator())
         menu.addItem(withTitle: "Quit Clipmorph", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
         for item in menu.items where item.action != #selector(NSApplication.terminate(_:)) {
@@ -64,6 +65,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         NSApp.activate(ignoringOtherApps: true)
         aboutWindow?.center()
         aboutWindow?.makeKeyAndOrderFront(nil)
+    }
+
+    @objc func openBuyMeACoffee() {
+        NSWorkspace.shared.open(URL(string: "https://buymeacoffee.com/nicop.hd")!)
     }
 
     @objc func showSettings() {
