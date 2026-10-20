@@ -10,6 +10,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/macOS-14%2B-111?logo=apple" alt="macOS 14+">
   <img src="https://img.shields.io/badge/Swift-5.10-F05138?logo=swift&logoColor=white" alt="Swift">
+  <a href="https://buymeacoffee.com/nicop.hd"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?logo=buymeacoffee&logoColor=black" alt="Buy me a coffee"></a>
 </p>
 
 ## Install
@@ -64,3 +65,7 @@ Settings → **Open Recipes File** creates `~/Library/Application Support/Clipmo
 - `LLMClient.swift`: Claude Messages API and OpenAI Chat Completions over SSE
 - `Recipes.swift`: built-in recipes, custom recipe loading, prompt template
 - `Settings.swift` / `Keychain.swift`: preferences and API key storage
+
+## Support
+
+If Clipmorph saves you time, you can [buy me a coffee](https://buymeacoffee.com/nicop.hd) ☕
