@@ -216,7 +216,6 @@
   .maker { text-align: center; }
   .maker .note { margin: 18px auto 0; max-width: 46ch; color: var(--muted); }
   .contact { margin-top: 28px; display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; }
-  .contact .addr { font: 500 17px var(--font); user-select: all; padding: 10px 16px; border-radius: 999px; background: var(--surface); }
 
   footer { padding-block: 40px 48px; }
   footer .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 14px; color: var(--muted); }
@@ -279,7 +278,7 @@
     <nav class="nav-links" aria-label="Sections">
       <a href="#how">How it works</a>
       <a href="#faq">FAQ</a>
-      <a href="https://github.com/nicop-hd/Clipmorph">GitHub</a>
+      <a href="https://github.com/nicop-hd/Clipmorph" target="_blank" rel="noopener">GitHub</a>
       <a class="btn btn-quiet btn-small" href="#download">Download</a>
     </nav>
   </header>
@@ -448,7 +447,7 @@
         </details>
         <details>
           <summary>macOS says it can’t verify the app. Is that normal?</summary>
-          <p>Yes. Clipmorph isn’t notarized by Apple yet, so the first launch is blocked. Open System Settings › Privacy &amp; Security and click Open Anyway, or see the Terminal command in <a href="#download">Download</a>. After that it opens normally. The source is public on <a href="https://github.com/nicop-hd/Clipmorph">GitHub</a> if you want to check what it does.</p>
+          <p>Yes. Clipmorph isn’t notarized by Apple yet, so the first launch is blocked. Open System Settings › Privacy &amp; Security and click Open Anyway, or see the Terminal command in <a href="#download">Download</a>. After that it opens normally. The source is public on <a href="https://github.com/nicop-hd/Clipmorph" target="_blank" rel="noopener">GitHub</a> if you want to check what it does.</p>
         </details>
         <details>
           <summary>How do I uninstall it?</summary>
@@ -467,7 +466,7 @@
       </div>
       <div class="get">
         <a class="btn btn-primary" href="https://github.com/nicop-hd/Clipmorph/releases/latest/download/Clipmorph.zip"><svg class="dl" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Download Clipmorph.zip</a>
-        <p class="meta">Version 0.1.0 · 0.9 MB · <a href="https://github.com/nicop-hd/Clipmorph/releases">All releases</a></p>
+        <p class="meta">Version 0.1.0 · 0.9 MB · <a href="https://github.com/nicop-hd/Clipmorph/releases" target="_blank" rel="noopener">All releases</a></p>
       </div>
       <ol class="install">
         <li><div><h3>Unzip and move it to Applications</h3><p>Double-click <code>Clipmorph.zip</code>, then drag Clipmorph into your Applications folder.</p></div></li>
@@ -477,7 +476,7 @@
       </ol>
       <div class="source">
         <h3>Prefer to build it yourself?</h3>
-        <p>The full source is on <a href="https://github.com/nicop-hd/Clipmorph">GitHub</a>. You only need the Swift Command Line Tools.</p>
+        <p>The full source is on <a href="https://github.com/nicop-hd/Clipmorph" target="_blank" rel="noopener">GitHub</a>. You only need the Swift Command Line Tools.</p>
 <pre><code>git clone https://github.com/nicop-hd/Clipmorph.git
 cd Clipmorph && ./scripts/build-app.sh
 open build/Clipmorph.app</code></pre>
@@ -491,13 +490,11 @@ open build/Clipmorph.app</code></pre>
       <h2 id="maker-title">Built by Nico P.</h2>
       <p class="note">I made Clipmorph because fixing one sentence shouldn’t mean opening a chat window and copying text back and forth. Questions, bugs and recipe ideas are welcome.</p>
       <div class="contact">
-        <span class="addr" id="addr">nicopassaro@gmail.com</span>
-        <button class="btn btn-quiet btn-small" type="button" id="copy-addr">Copy</button>
-        <a class="btn btn-quiet btn-small" href="mailto:nicopassaro@gmail.com?subject=Clipmorph">Email</a>
+        <a class="btn btn-primary" href="mailto:nicopassaro@gmail.com?subject=Clipmorph">Contact me</a>
       </div>
       <div class="links">
-        <a class="btn btn-quiet btn-small" href="https://github.com/nicop-hd/Clipmorph">View on GitHub</a>
-        <a class="btn btn-quiet btn-small" href="https://buymeacoffee.com/nicop.hd">Buy me a coffee</a>
+        <a class="btn btn-quiet btn-small" href="https://github.com/nicop-hd/Clipmorph" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="btn btn-quiet btn-small" href="https://buymeacoffee.com/nicop.hd" target="_blank" rel="noopener">Buy me a coffee</a>
       </div>
     </div>
   </section>
@@ -510,7 +507,7 @@ open build/Clipmorph.app</code></pre>
       <a href="#how">How it works</a>
       <a href="#faq">FAQ</a>
       <a href="#download">Download</a>
-      <a href="https://github.com/nicop-hd/Clipmorph">GitHub</a>
+      <a href="https://github.com/nicop-hd/Clipmorph" target="_blank" rel="noopener">GitHub</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -661,13 +658,6 @@ open build/Clipmorph.app</code></pre>
   });
   addEventListener("blur", () => document.querySelectorAll("kbd.down").forEach(k => k.classList.remove("down")));
 
-  // Copy the contact address; fall back to selecting it.
-  $("copy-addr").addEventListener("click", async e => {
-    const btn = e.currentTarget;
-    try { await navigator.clipboard.writeText($("addr").textContent); btn.textContent = "Copied"; }
-    catch { const r = document.createRange(); r.selectNodeContents($("addr")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Selected"; }
-    setTimeout(() => { btn.textContent = "Copy"; }, 1600);
-  });
 })();
 </script>
 </body>
