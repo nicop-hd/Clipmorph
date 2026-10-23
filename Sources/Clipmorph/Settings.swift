@@ -21,6 +21,9 @@ final class SettingsStore: ObservableObject {
     @Published var anthropicWorkspaceID: String {
         didSet { defaults.set(anthropicWorkspaceID, forKey: "anthropicWorkspaceID") }
     }
+    @Published private(set) var repositoryDocuments: [RepositoryDocument] = []
+    @Published var repositoryError: String?
+
     /// Unsaved text in the settings key fields (kept here because the CLT SDK has no SwiftUI macro plugin for @State).
     @Published var keyDrafts: [ProviderKind: String] = [:]
 
@@ -34,6 +37,36 @@ final class SettingsStore: ObservableObject {
         for kind in ProviderKind.allCases {
             keyCache[kind] = Keychain.read(account: kind.rawValue)
         }
+    }
+
+    func reloadRepository() {
+        repositoryDocuments = Repository.load()
+    }
+
+    func addRepositoryFiles() {
+        let panel = NSOpenPanel()
+        panel.allowsMultipleSelection = true
+        panel.canChooseDirectories = false
+        panel.allowedContentTypes = Repository.contentTypes
+        panel.prompt = "Add to Repository"
+        guard panel.runModal() == .OK else { return }
+        do {
+            try Repository.add(panel.urls)
+            repositoryError = nil
+        } catch {
+            repositoryError = error.localizedDescription
+        }
+        reloadRepository()
+    }
+
+    func removeRepositoryDocument(_ document: RepositoryDocument) {
+        do {
+            try Repository.remove(document)
+            repositoryError = nil
+        } catch {
+            repositoryError = error.localizedDescription
+        }
+        reloadRepository()
     }
 
     func model(for kind: ProviderKind) -> String {
@@ -108,6 +141,8 @@ struct SettingsView: View {
                     .foregroundStyle(.secondary)
             }
 
+            repositorySection
+
             Section("Updates") {
                 HStack {
                     Toggle("Check for updates automatically", isOn: $settings.checkForUpdates)
@@ -128,8 +163,64 @@ struct SettingsView: View {
             }
         }
         .formStyle(.grouped)
-        .frame(width: 480)
-        .fixedSize(horizontal: false, vertical: true)
+        // Fixed height with a scrolling form, so the window fits on small screens.
+        .frame(width: 480, height: 640)
+    }
+
+    private var repositorySection: some View {
+        Section("Repository") {
+            Text("Documents used by “Reply from my repository”: product sheets, company info, pricing, tone of voice. PDF, Word, RTF, Markdown or plain text.")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+
+            if settings.repositoryDocuments.isEmpty {
+                Text("No documents yet.")
+                    .foregroundStyle(.secondary)
+            }
+            ForEach(settings.repositoryDocuments) { document in
+                HStack(spacing: 8) {
+                    Image(systemName: document.isReadable ? "doc.text" : "exclamationmark.triangle.fill")
+                        .foregroundStyle(document.isReadable ? Color.secondary : Color.orange)
+                    Text(document.name)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
+                    Spacer()
+                    Text(document.isReadable ? "≈ \(Self.formatTokens(document.estimatedTokens)) tokens" : "No readable text")
+                        .font(.caption)
+                        .foregroundStyle(document.isReadable ? Color.secondary : Color.orange)
+                    Button {
+                        settings.removeRepositoryDocument(document)
+                    } label: {
+                        Image(systemName: "trash")
+                    }
+                    .buttonStyle(.borderless)
+                    .help("Move to Trash")
+                }
+            }
+
+            HStack {
+                let total = settings.repositoryDocuments.filter(\.isReadable).reduce(0) { $0 + $1.estimatedTokens }
+                Text(total > 0 ? "Total ≈ \(Self.formatTokens(total)) tokens" : "")
+                    .font(.caption)
+                    .foregroundStyle(total > 150_000 ? Color.orange : Color.secondary)
+                Spacer()
+                Button("Show in Finder") {
+                    NSWorkspace.shared.open(Repository.ensureFolder())
+                }
+                Button("Add Files…") { settings.addRepositoryFiles() }
+            }
+
+            if let error = settings.repositoryError {
+                Text(error).font(.caption).foregroundStyle(.red)
+            }
+            Text("These documents are sent to \(settings.provider.displayName) with every request from a recipe that uses the repository. Larger repositories make replies slower and cost more per request.")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+        }
+    }
+
+    private static func formatTokens(_ count: Int) -> String {
+        count >= 1000 ? String(format: "%.1fk", Double(count) / 1000) : "\(count)"
     }
 
     private func draftBinding(for kind: ProviderKind) -> Binding<String> {

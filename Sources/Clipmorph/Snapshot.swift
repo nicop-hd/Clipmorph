@@ -35,6 +35,24 @@ enum Snapshot {
             try? rep.representation(using: .png, properties: [:])?.write(to: url)
             print(url.path)
         }
+        renderSettings(settings, to: directory, backdrop: backdrop)
         exit(0)
+    }
+
+    private static func renderSettings(_ settings: SettingsStore, to directory: String, backdrop: NSColor) {
+        settings.reloadRepository()
+        let host = NSHostingView(rootView: SettingsView(settings: settings))
+        host.frame.size = NSSize(width: 480, height: 640)
+        let window = NSWindow(contentRect: host.frame, styleMask: .borderless, backing: .buffered, defer: false)
+        window.appearance = NSAppearance(named: .darkAqua)
+        window.backgroundColor = backdrop
+        window.contentView = host
+        host.layoutSubtreeIfNeeded()
+        RunLoop.main.run(until: Date().addingTimeInterval(0.3))
+        guard let rep = host.bitmapImageRepForCachingDisplay(in: host.bounds) else { return }
+        host.cacheDisplay(in: host.bounds, to: rep)
+        let url = URL(fileURLWithPath: directory).appendingPathComponent("settings.png")
+        try? rep.representation(using: .png, properties: [:])?.write(to: url)
+        print(url.path)
     }
 }

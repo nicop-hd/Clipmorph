@@ -122,8 +122,9 @@ final class PanelController {
         if model.phase == .picking,
            event.modifierFlags.intersection([.command, .control, .option]).isEmpty,
            let char = event.charactersIgnoringModifiers?.first,
-           let number = char.wholeNumberValue, (1...9).contains(number) {
-            model.run(at: number - 1)
+           let number = char.wholeNumberValue {
+            // 1–9 pick the first nine recipes, 0 the tenth.
+            model.run(at: number == 0 ? 9 : number - 1)
             return true
         }
         return false

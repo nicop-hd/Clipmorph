@@ -65,7 +65,7 @@ final class TransformModel: ObservableObject {
         output = ""
         phase = .running
 
-        let request = TransformRequest(
+        var request = TransformRequest(
             provider: provider,
             apiKey: apiKey,
             model: settings.model(for: provider),
@@ -76,6 +76,14 @@ final class TransformModel: ObservableObject {
 
         task = Task {
             do {
+                if recipe.readsRepository {
+                    let documents = await Task.detached { Repository.load() }.value.filter(\.isReadable)
+                    guard !documents.isEmpty else {
+                        phase = .failed("Your repository is empty. Add documents in Settings › Repository.")
+                        return
+                    }
+                    request.systemPrefix = Prompts.repository(documents)
+                }
                 for try await chunk in LLMClient.stream(request) {
                     output += chunk
                 }

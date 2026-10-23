@@ -113,7 +113,7 @@ struct PanelView: View {
         HStack(spacing: 14) {
             switch model.phase {
             case .picking:
-                hint("1–9", "run")
+                hint("0–9", "run")
                 hint("↑↓ ⏎", "select")
             case .running:
                 hint("⌫", "back")
@@ -152,7 +152,7 @@ private struct RecipeRow: View {
 
     var body: some View {
         HStack(spacing: 10) {
-            Text(index < 9 ? "\(index + 1)" : " ")
+            Text(index < 9 ? "\(index + 1)" : index == 9 ? "0" : " ")
                 .font(.caption.monospaced())
                 .foregroundStyle(.secondary)
                 .frame(width: 14)

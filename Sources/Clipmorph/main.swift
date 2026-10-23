@@ -42,9 +42,14 @@ enum SelfTest {
         print("input:  \(input)")
         print("output: ", terminator: "")
 
-        let request = TransformRequest(provider: provider, apiKey: apiKey, model: settings.model(for: provider),
+        var request = TransformRequest(provider: provider, apiKey: apiKey, model: settings.model(for: provider),
                                        system: Prompts.system(for: recipe), input: input,
                                        workspaceID: settings.workspaceID(for: provider))
+        if recipe.readsRepository {
+            let documents = Repository.load().filter(\.isReadable)
+            print("repository: \(documents.map(\.name).joined(separator: ", "))")
+            request.systemPrefix = Prompts.repository(documents)
+        }
         Task {
             do {
                 var chunks = 0

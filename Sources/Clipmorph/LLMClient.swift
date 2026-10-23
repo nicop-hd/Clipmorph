@@ -25,6 +25,9 @@ struct TransformRequest {
     var provider: ProviderKind
     var apiKey: String
     var model: String
+    /// Leading part of the system prompt that stays the same across requests (the repository),
+    /// sent first so providers can cache it.
+    var systemPrefix: String? = nil
     var system: String
     var input: String
     /// Needed only for Claude keys that aren't scoped to a single workspace.
@@ -86,7 +89,7 @@ enum LLMClient {
                 "model": request.model,
                 "max_tokens": 16000,
                 "stream": true,
-                "system": request.system,
+                "system": anthropicSystem(request),
                 "messages": [["role": "user", "content": Prompts.user(input: request.input)]],
                 // Clipboard transforms are short and latency-sensitive.
                 "output_config": ["effort": "low"],
@@ -104,7 +107,7 @@ enum LLMClient {
                 "model": request.model,
                 "stream": true,
                 "messages": [
-                    ["role": "system", "content": request.system],
+                    ["role": "system", "content": [request.systemPrefix, request.system].compactMap { $0 }.joined(separator: "\n\n")],
                     ["role": "user", "content": Prompts.user(input: request.input)],
                 ],
             ]
@@ -115,6 +118,15 @@ enum LLMClient {
         urlRequest.setValue("application/json", forHTTPHeaderField: "content-type")
         urlRequest.httpBody = try JSONSerialization.data(withJSONObject: body)
         return urlRequest
+    }
+
+    /// A plain string, or blocks with the repository marked for prompt caching.
+    private static func anthropicSystem(_ request: TransformRequest) -> Any {
+        guard let prefix = request.systemPrefix else { return request.system }
+        return [
+            ["type": "text", "text": prefix, "cache_control": ["type": "ephemeral"]],
+            ["type": "text", "text": request.system],
+        ]
     }
 
     private static func supportsServerFallback(_ model: String) -> Bool {
