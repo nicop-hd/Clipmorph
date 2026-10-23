@@ -88,10 +88,9 @@
   .hero { padding-block: 16px 36px; display: grid; justify-items: center; text-align: center; }
   .art { width: 112px; height: auto; display: block; }
   .art .bob { animation: bob 4.2s ease-in-out infinite; }
-  .eye { animation: blink 6s infinite; transform-box: fill-box; transform-origin: center; }
+  .eye { transform-box: fill-box; transform-origin: center; }
   .led { animation: led 1.6s steps(1) infinite; }
   @keyframes bob { 50% { transform: translateY(-4px); } }
-  @keyframes blink { 0%, 94%, 100% { transform: scaleY(1); } 96% { transform: scaleY(.1); } }
   @keyframes led { 50% { opacity: .25; } }
 
   .chrome {
@@ -312,9 +311,10 @@
             <circle cx="-17" cy="21" r="15" fill="#120A22"/>
             <circle cx="17" cy="21" r="15" fill="#120A22"/>
             <g class="eye" stroke="none">
-              <circle cx="-17" cy="21" r="9" fill="#25E7FF"/><circle cx="17" cy="21" r="9" fill="#25E7FF"/>
-              <circle cx="-17" cy="21" r="4" fill="#120A22"/><circle cx="17" cy="21" r="4" fill="#120A22"/>
-              <circle cx="-21" cy="17" r="2.5" fill="#FFFFFF"/><circle cx="13" cy="17" r="2.5" fill="#FFFFFF"/>
+              <circle cx="-17" cy="21" r="9" fill="#25E7FF"/><circle cx="-17" cy="21" r="4" fill="#120A22"/><circle cx="-21" cy="17" r="2.5" fill="#FFFFFF"/>
+            </g>
+            <g class="eye" stroke="none">
+              <circle cx="17" cy="21" r="9" fill="#25E7FF"/><circle cx="17" cy="21" r="4" fill="#120A22"/><circle cx="13" cy="17" r="2.5" fill="#FFFFFF"/>
             </g>
           </g>
         </g>
@@ -348,7 +348,7 @@
           <svg class="bot" viewBox="0 0 80 66" aria-hidden="true">
             <rect x="2" y="2" width="76" height="44" rx="18" fill="url(#chromefill)" stroke="#2B1450" stroke-width="3"/>
             <circle cx="23" cy="24" r="14" fill="#120A22"/><circle cx="57" cy="24" r="14" fill="#120A22"/>
-            <circle class="pupil" cx="23" cy="24" r="8" fill="#25E7FF"/><circle class="pupil" cx="57" cy="24" r="8" fill="#25E7FF"/>
+            <circle class="pupil eye" cx="23" cy="24" r="8" fill="#25E7FF"/><circle class="pupil eye" cx="57" cy="24" r="8" fill="#25E7FF"/>
             <rect x="28" y="46" width="24" height="12" fill="#2B1450"/>
             <rect x="14" y="58" width="52" height="6" rx="2" fill="#FF2D75"/>
           </svg>
@@ -579,6 +579,20 @@ open build/Clipmorph.app</code></pre>
   const panel = $("panel"), list = $("list"), out = $("out"), nameEl = $("res-name"), state = $("state");
   const hostBody = $("host-body"), scene = $("try");
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Blink at irregular intervals, now and then twice in a row. A blink moves nothing
+  // across the screen, so it also runs with Reduce Motion on.
+  const eyes = document.querySelectorAll(".eye");
+  const blinkOnce = () => eyes.forEach(e => e.animate(
+    [{ transform: "scaleY(1)" }, { transform: "scaleY(0.08)", offset: 0.45 }, { transform: "scaleY(1)" }],
+    { duration: 170, easing: "ease-in-out" }));
+  (function scheduleBlink() {
+    setTimeout(() => {
+      blinkOnce();
+      if (Math.random() < 0.25) setTimeout(blinkOnce, 260);
+      scheduleBlink();
+    }, 2200 + Math.random() * 4300);
+  })();
   const wait = ms => new Promise(r => setTimeout(r, ms));
   let sample = 0, token = 0;
 
