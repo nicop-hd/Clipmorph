@@ -11,6 +11,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     private lazy var panel = PanelController(model: model, openSettings: { [weak self] in self?.showSettings() })
     private var settingsWindow: NSWindow?
     private var aboutWindow: NSWindow?
+    private lazy var updater = UpdateController(settings: settings)
+    private var updateItem: NSMenuItem?
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
@@ -22,7 +24,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.button?.image = icon
 
         let menu = NSMenu()
+        menu.autoenablesItems = false
         menu.addItem(withTitle: "About Clipmorph", action: #selector(showAbout), keyEquivalent: "")
+        updateItem = menu.addItem(withTitle: "Check for Updates…", action: #selector(checkForUpdates), keyEquivalent: "")
         menu.addItem(.separator())
         menu.addItem(withTitle: "Transform Clipboard  ⌥Space", action: #selector(showPanel), keyEquivalent: "")
         menu.addItem(.separator())
@@ -38,6 +42,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         hotKey = HotKey(keyCode: UInt32(kVK_Space), modifiers: UInt32(optionKey)) { [weak self] in
             self?.showPanel()
         }
+
+        updater.onBusyChange = { [weak self] busy in
+            self?.updateItem?.title = busy ? "Checking for Updates…" : "Check for Updates…"
+            self?.updateItem?.isEnabled = !busy
+        }
+        updater.start()
 
         if settings.apiKey(for: settings.provider) == nil {
             showSettings()
@@ -65,6 +75,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         NSApp.activate(ignoringOtherApps: true)
         aboutWindow?.center()
         aboutWindow?.makeKeyAndOrderFront(nil)
+    }
+
+    @objc func checkForUpdates() {
+        updater.check(userInitiated: true)
     }
 
     @objc func openBuyMeACoffee() {

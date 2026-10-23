@@ -15,6 +15,9 @@ final class SettingsStore: ObservableObject {
     @Published var autoPaste: Bool {
         didSet { defaults.set(autoPaste, forKey: "autoPaste") }
     }
+    @Published var checkForUpdates: Bool {
+        didSet { defaults.set(checkForUpdates, forKey: "checkForUpdates") }
+    }
     @Published var anthropicWorkspaceID: String {
         didSet { defaults.set(anthropicWorkspaceID, forKey: "anthropicWorkspaceID") }
     }
@@ -27,6 +30,7 @@ final class SettingsStore: ObservableObject {
         models = Dictionary(uniqueKeysWithValues: ProviderKind.allCases.map { ($0, stored[$0.rawValue] ?? $0.defaultModel) })
         autoPaste = defaults.bool(forKey: "autoPaste")
         anthropicWorkspaceID = defaults.string(forKey: "anthropicWorkspaceID") ?? ""
+        checkForUpdates = defaults.object(forKey: "checkForUpdates") as? Bool ?? true
         for kind in ProviderKind.allCases {
             keyCache[kind] = Keychain.read(account: kind.rawValue)
         }
@@ -102,6 +106,15 @@ struct SettingsView: View {
                 Text("Auto-paste needs Accessibility access (System Settings › Privacy & Security › Accessibility). Results are always copied to the clipboard either way.")
                     .font(.caption)
                     .foregroundStyle(.secondary)
+            }
+
+            Section("Updates") {
+                HStack {
+                    Toggle("Check for updates automatically", isOn: $settings.checkForUpdates)
+                    Spacer()
+                    Text("Version \(UpdateService.currentVersion)")
+                        .foregroundStyle(.secondary)
+                }
             }
 
             Section("Recipes") {

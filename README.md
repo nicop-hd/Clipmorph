@@ -23,7 +23,7 @@
    xattr -dr com.apple.quarantine /Applications/Clipmorph.app
    ```
 
-Clipmorph lives in the menu bar (no Dock icon). Runs on Apple Silicon and Intel Macs with macOS 14 or later.
+Clipmorph checks for new versions once a day and installs them for you; you can also pick **Check for Updates…** from the menu bar. Clipmorph lives in the menu bar (no Dock icon). Runs on Apple Silicon and Intel Macs with macOS 14 or later.
 
 ## Build from source
 
@@ -69,3 +69,10 @@ Settings → **Open Recipes File** creates `~/Library/Application Support/Clipmo
 ## Support
 
 If Clipmorph saves you time, you can [buy me a coffee](https://buymeacoffee.com/nicop.hd) ☕
+
+## Releasing
+
+1. Bump `CFBundleShortVersionString` and `CFBundleVersion` in `Resources/Info.plist`.
+2. Run `scripts/release.sh` (optionally with a notes file). It builds, signs, zips and publishes the GitHub release.
+
+Releases must be signed with the same certificate (`scripts/make-signing-cert.sh`): installed copies only accept updates whose signature matches their own.

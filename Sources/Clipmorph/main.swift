@@ -11,6 +11,11 @@ MainActor.assumeIsolated {
         Snapshot.run(directory: CommandLine.arguments.dropFirst(flag + 1).first ?? ".")
     }
 
+    // `Clipmorph --update [--install]` checks GitHub for a newer release and optionally installs it.
+    if let flag = CommandLine.arguments.firstIndex(of: "--update") {
+        UpdateCLI.run(install: CommandLine.arguments.dropFirst(flag + 1).contains("--install"))
+    }
+
     let app = NSApplication.shared
     let delegate = AppDelegate()
     app.delegate = delegate
