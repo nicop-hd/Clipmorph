@@ -36,13 +36,17 @@ enum Snapshot {
             print(url.path)
         }
         renderSettings(settings, to: directory, backdrop: backdrop)
+        settings.isRepositoryDropTargeted = true
+        renderSettings(settings, to: directory, backdrop: backdrop, name: "settings-drop-targeted")
+        settings.isRepositoryDropTargeted = false
         exit(0)
     }
 
-    private static func renderSettings(_ settings: SettingsStore, to directory: String, backdrop: NSColor) {
+    private static func renderSettings(_ settings: SettingsStore, to directory: String, backdrop: NSColor, name: String = "settings") {
         settings.reloadRepository()
-        let host = NSHostingView(rootView: SettingsView(settings: settings))
-        host.frame.size = NSSize(width: 480, height: 640)
+        // Tall enough to show every section without scrolling.
+        let host = NSHostingView(rootView: SettingsView(settings: settings, height: 1180))
+        host.frame.size = NSSize(width: 480, height: 1180)
         let window = NSWindow(contentRect: host.frame, styleMask: .borderless, backing: .buffered, defer: false)
         window.appearance = NSAppearance(named: .darkAqua)
         window.backgroundColor = backdrop
@@ -51,7 +55,7 @@ enum Snapshot {
         RunLoop.main.run(until: Date().addingTimeInterval(0.3))
         guard let rep = host.bitmapImageRepForCachingDisplay(in: host.bounds) else { return }
         host.cacheDisplay(in: host.bounds, to: rep)
-        let url = URL(fileURLWithPath: directory).appendingPathComponent("settings.png")
+        let url = URL(fileURLWithPath: directory).appendingPathComponent("\(name).png")
         try? rep.representation(using: .png, properties: [:])?.write(to: url)
         print(url.path)
     }

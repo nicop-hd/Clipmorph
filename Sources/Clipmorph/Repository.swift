@@ -52,6 +52,34 @@ enum Repository {
         }
     }
 
+    /// Expands folders and splits what was picked or dropped into supported files and skipped names.
+    static func supportedFiles(in urls: [URL]) -> (files: [URL], skipped: [String]) {
+        var files: [URL] = []
+        var skipped: [String] = []
+        for url in urls {
+            var isDirectory: ObjCBool = false
+            guard FileManager.default.fileExists(atPath: url.path, isDirectory: &isDirectory) else { continue }
+            let candidates: [URL]
+            if isDirectory.boolValue {
+                let enumerator = FileManager.default.enumerator(
+                    at: url, includingPropertiesForKeys: [.isRegularFileKey], options: [.skipsHiddenFiles, .skipsPackageDescendants]
+                )
+                candidates = (enumerator?.allObjects as? [URL] ?? [])
+                    .filter { (try? $0.resourceValues(forKeys: [.isRegularFileKey]).isRegularFile) == true }
+            } else {
+                candidates = [url]
+            }
+            for file in candidates {
+                if supportedExtensions.contains(file.pathExtension.lowercased()) {
+                    files.append(file)
+                } else {
+                    skipped.append(file.lastPathComponent)
+                }
+            }
+        }
+        return (files, skipped)
+    }
+
     /// Moves a document to the Trash, so it can still be recovered.
     static func remove(_ document: RepositoryDocument) throws {
         try FileManager.default.trashItem(at: document.url, resultingItemURL: nil)
