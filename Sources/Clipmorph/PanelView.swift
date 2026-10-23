@@ -24,9 +24,8 @@ struct PanelView: View {
 
     private var header: some View {
         HStack(alignment: .top, spacing: 10) {
-            Image(systemName: "doc.on.clipboard")
-                .foregroundStyle(.secondary)
-                .padding(.top, 2)
+            BotHead(isBusy: model.phase == .running)
+                .padding(.top, 1)
             VStack(alignment: .leading, spacing: 4) {
                 Text(model.input.isEmpty ? "Clipboard is empty" : model.input)
                     .font(.system(size: 12, design: .monospaced))
