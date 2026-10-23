@@ -325,7 +325,7 @@
         <a class="btn btn-primary" href="https://github.com/nicop-hd/Clipmorph/releases/latest/download/Clipmorph.zip"><svg class="dl" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Download for Mac</a>
         <a class="btn btn-quiet" href="#try">Try it below</a>
       </div>
-      <p class="req">Free · Version 0.1.0 · 0.9 MB · macOS 14+, Apple silicon and Intel</p>
+      <p class="req">Free · Version 0.1.1 · 1 MB · macOS 14+, Apple silicon and Intel</p>
       <p class="req mac-only">Clipmorph is a Mac app. Open this page on your Mac to install it.</p>
     </section>
   </div>
@@ -407,8 +407,8 @@
         <h2 id="features-title">Built like a system utility.</h2>
       </div>
       <div class="features">
-        <div><h3>Your key, your model</h3><p>Works with Claude or OpenAI. Paste your own API key and choose any model ID.</p></div>
-        <div><h3>Stored in the Keychain</h3><p>API keys live in the macOS login Keychain, not in a settings file.</p></div>
+        <div><h3>Your key, your model</h3><p>Works with Claude or OpenAI. Your API key stays in the macOS Keychain, and you choose any model ID.</p></div>
+        <div><h3>Keeps itself up to date</h3><p>Checks for new versions once a day and installs them only if they match GitHub’s checksum and the same developer signature. You can turn this off in Settings.</p></div>
         <div><h3>No server in between</h3><p>Requests go straight from your Mac to the provider. Nothing passes through us.</p></div>
         <div><h3>Copied text can’t give orders</h3><p>Your clipboard is sent as text to rewrite. Instructions hidden inside it are ignored.</p></div>
       </div>
@@ -450,6 +450,10 @@
           <p>Yes. Clipmorph isn’t notarized by Apple yet, so the first launch is blocked. Open System Settings › Privacy &amp; Security and click Open Anyway, or see the Terminal command in <a href="#download">Download</a>. After that it opens normally. The source is public on <a href="https://github.com/nicop-hd/Clipmorph" target="_blank" rel="noopener">GitHub</a> if you want to check what it does.</p>
         </details>
         <details>
+          <summary>How do updates work?</summary>
+          <p>From version 0.1.1, Clipmorph checks for updates once a day and installs them for you, or you can pick Check for Updates… in the menu bar. If you have 0.1.0, download the new version once by hand and replace the app in Applications. If you use auto-paste, switch Clipmorph back on under Privacy &amp; Security › Accessibility afterwards.</p>
+        </details>
+        <details>
           <summary>How do I uninstall it?</summary>
           <p>Remove your API key in Settings, quit Clipmorph from the menu bar and move the app to the Trash. Custom recipes live in ~/Library/Application Support/Clipmorph.</p>
         </details>
@@ -466,7 +470,7 @@
       </div>
       <div class="get">
         <a class="btn btn-primary" href="https://github.com/nicop-hd/Clipmorph/releases/latest/download/Clipmorph.zip"><svg class="dl" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Download Clipmorph.zip</a>
-        <p class="meta">Version 0.1.0 · 0.9 MB · <a href="https://github.com/nicop-hd/Clipmorph/releases" target="_blank" rel="noopener">All releases</a></p>
+        <p class="meta">Version 0.1.1 · 1 MB · <a href="https://github.com/nicop-hd/Clipmorph/releases" target="_blank" rel="noopener">All releases</a></p>
       </div>
       <ol class="install">
         <li><div><h3>Unzip and move it to Applications</h3><p>Double-click <code>Clipmorph.zip</code>, then drag Clipmorph into your Applications folder.</p></div></li>
@@ -502,7 +506,7 @@ open build/Clipmorph.app</code></pre>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Clipmorph · Version 0.1.0</span>
+    <span>© 2026 Clipmorph · Version 0.1.1</span>
     <nav aria-label="Footer">
       <a href="#how">How it works</a>
       <a href="#faq">FAQ</a>
