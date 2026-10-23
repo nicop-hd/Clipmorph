@@ -6,6 +6,11 @@ MainActor.assumeIsolated {
         SelfTest.run(arguments: Array(CommandLine.arguments.dropFirst(flag + 1)))
     }
 
+    // `Clipmorph --snapshot <dir>` renders the panel in a few states to PNG files.
+    if let flag = CommandLine.arguments.firstIndex(of: "--snapshot") {
+        Snapshot.run(directory: CommandLine.arguments.dropFirst(flag + 1).first ?? ".")
+    }
+
     let app = NSApplication.shared
     let delegate = AppDelegate()
     app.delegate = delegate

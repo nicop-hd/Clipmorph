@@ -93,6 +93,17 @@ final class TransformModel: ObservableObject {
         }
     }
 
+    /// Puts the panel into a fixed state without calling a provider (used by `--snapshot`).
+    func stage(input: String, recipeIndex: Int? = nil, output: String = "", phase: Phase = .picking) {
+        cancel()
+        self.input = input
+        recipes = RecipeStore.load()
+        selection = recipeIndex ?? 0
+        activeRecipe = recipeIndex.map { recipes[$0] }
+        self.output = output
+        self.phase = phase
+    }
+
     func backToRecipes() {
         cancel()
         output = ""
