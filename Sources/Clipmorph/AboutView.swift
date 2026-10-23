@@ -6,10 +6,7 @@ struct AboutView: View {
     private static let width: CGFloat = 520
 
     private var version: String {
-        let info = Bundle.main.infoDictionary
-        let short = info?["CFBundleShortVersionString"] as? String ?? "–"
-        let build = info?["CFBundleVersion"] as? String ?? "–"
-        return "Version \(short) (\(build))"
+        "Version \(UpdateService.currentVersion)"
     }
 
     var body: some View {
