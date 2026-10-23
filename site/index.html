@@ -325,7 +325,7 @@
         <a class="btn btn-primary" href="https://github.com/nicop-hd/Clipmorph/releases/latest/download/Clipmorph.zip"><svg class="dl" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Download for Mac</a>
         <a class="btn btn-quiet" href="#try">Try it below</a>
       </div>
-      <p class="req">Free · Version 0.1.1 · 1 MB · macOS 14+, Apple silicon and Intel</p>
+      <p class="req">Free · Version 0.1.2 · 1.1 MB · macOS 14+, Apple silicon and Intel</p>
       <p class="req mac-only">Clipmorph is a Mac app. Open this page on your Mac to install it.</p>
     </section>
   </div>
@@ -363,14 +363,14 @@
           </div>
         </div>
         <div class="panel-foot">
-          <span><kbd>1</kbd>–<kbd>9</kbd> run</span>
+          <span><kbd>1</kbd>–<kbd>0</kbd> run</span>
           <span><kbd data-key="Enter">⏎</kbd> paste</span>
           <span><kbd data-key="Escape">esc</kbd> close</span>
           <span class="model">Claude · claude-opus-5-5</span>
         </div>
       </div>
     </div>
-    <p class="demo-note">Pick a sample, then click a recipe or press 1–9. Results are pre-written examples.</p>
+    <p class="demo-note">Pick a sample, then click a recipe or press 1–0. Results are pre-written examples; “Reply from my repository” uses a sample price list.</p>
   </div>
 
   <!-- How it works -->
@@ -407,13 +407,13 @@
         <h2 id="features-title">Built like a system utility.</h2>
       </div>
       <div class="features">
-        <div><h3>Your key, your model</h3><p>Works with Claude or OpenAI. Your API key stays in the macOS Keychain, and you choose any model ID.</p></div>
+        <div><h3>Your key, your model</h3><p>Works with Claude or OpenAI, with any model ID. Your key stays in the macOS Keychain, and requests go straight from your Mac to the provider.</p></div>
         <div><h3>Keeps itself up to date</h3><p>Checks for new versions once a day and installs them only if they match GitHub’s checksum and the same developer signature. You can turn this off in Settings.</p></div>
-        <div><h3>No server in between</h3><p>Requests go straight from your Mac to the provider. Nothing passes through us.</p></div>
+        <div><h3>Replies from your own documents</h3><p>Add product sheets, prices and tone-of-voice guides in Settings › Repository. “Reply from my repository” answers emails using only those facts, and marks anything they don’t cover with [to confirm: …].</p></div>
         <div><h3>Copied text can’t give orders</h3><p>Your clipboard is sent as text to rewrite. Instructions hidden inside it are ignored.</p></div>
       </div>
       <div class="custom">
-        <div class="intro" style="margin-bottom:24px"><p>Nine recipes are built in. Add your own in <code>recipes.json</code> (Settings › Open Recipes File):</p></div>
+        <div class="intro" style="margin-bottom:24px"><p>Ten recipes are built in, one per number key. Add your own in <code>recipes.json</code> (Settings › Open Recipes File). Add <code>"usesRepository": true</code> to let a recipe read your documents.</p></div>
 <pre><code>[{
   <span class="p">"id"</span>: <span class="s">"commit-message"</span>,
   <span class="p">"name"</span>: <span class="s">"Commit message"</span>,
@@ -439,7 +439,7 @@
         </details>
         <details>
           <summary>What happens to the text I copy?</summary>
-          <p>Clipmorph reads the clipboard when you open the panel and sends it to your chosen provider only when you run a recipe. It keeps no history and writes nothing you copy to disk.</p>
+          <p>Clipmorph reads the clipboard when you open the panel and sends it to your chosen provider only when you run a recipe. It keeps no history and writes nothing you copy to disk. Documents in your repository stay in a folder on your Mac and are sent to your provider only when you run a recipe that uses them.</p>
         </details>
         <details>
           <summary>Why does it ask for Accessibility access?</summary>
@@ -470,7 +470,7 @@
       </div>
       <div class="get">
         <a class="btn btn-primary" href="https://github.com/nicop-hd/Clipmorph/releases/latest/download/Clipmorph.zip"><svg class="dl" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Download Clipmorph</a>
-        <p class="meta">Version 0.1.1 · 1 MB · <a href="https://github.com/nicop-hd/Clipmorph/releases" target="_blank" rel="noopener">All releases</a></p>
+        <p class="meta">Version 0.1.2 · 1.1 MB · <a href="https://github.com/nicop-hd/Clipmorph/releases" target="_blank" rel="noopener">All releases</a></p>
       </div>
       <ol class="install">
         <li><div><h3>Unzip and move it to Applications</h3><p>Double-click <code>Clipmorph.zip</code>, then drag Clipmorph into your Applications folder.</p></div></li>
@@ -506,7 +506,7 @@ open build/Clipmorph.app</code></pre>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Clipmorph · Version 0.1.1</span>
+    <span>© 2026 Clipmorph · Version 0.1.2</span>
     <nav aria-label="Footer">
       <a href="#how">How it works</a>
       <a href="#faq">FAQ</a>
@@ -520,7 +520,7 @@ open build/Clipmorph.app</code></pre>
 <script>
 (() => {
   const names = ["Fix grammar & spelling", "Make concise", "Professional tone", "Friendly tone", "Summarize as bullets",
-                 "Draft a reply", "Translate to English", "Translate to French", "Translate to Italian"];
+                 "Draft a reply", "Reply from my repository", "Translate to English", "Translate to French", "Translate to Italian"];
   const samples = [
     {
       app: "Mail", title: "New Message", fields: ["To: Sam", "Subject: Wednesday sync"],
@@ -533,6 +533,7 @@ open build/Clipmorph.app</code></pre>
         "Hey! So sorry, something came up and I can’t make tomorrow’s meeting. Any chance we could move it to Thursday?",
         "- Can’t attend tomorrow’s meeting\n- Something unexpected came up\n- Suggests moving it to Thursday",
         "No problem, thanks for letting me know. Thursday works for me. Does [time] suit you?",
+        "Hi Sam, thanks for letting us know. Thursday works for us. Would [to confirm: Thursday time slot] suit you?",
         "Hey, sorry, I can’t make the meeting tomorrow. Something came up. Can we move it to Thursday?",
         "Salut, désolé, je ne peux pas venir à la réunion demain, j’ai un imprévu. On peut la décaler à jeudi ?",
         "Ciao, scusa, domani non riesco a venire alla riunione, mi è capitato un imprevisto. Possiamo spostarla a giovedì?",
@@ -549,15 +550,16 @@ open build/Clipmorph.app</code></pre>
         "Heads up! The CSV export trips over names with commas and splits those rows in two. Looks like it started Tuesday.",
         "- CSV export breaks on names that contain a comma\n- Affected rows are split in two\n- Likely started on Tuesday",
         "Thanks for flagging this. We’ll look into the CSV export and how it handles commas in names. Could you send an example file from [date]?",
+        "Thank you for reporting this, and sorry for the trouble. Our team is looking into how the CSV export handles names that contain a comma. We expect a fix by [to confirm: release date] and will let you know when it’s live.",
         "The export to CSV breaks when a name has a comma in it: the row gets split in two. I think it started on Tuesday.",
         "L’export CSV ne fonctionne pas quand un nom contient une virgule : la ligne est coupée en deux. Je crois que ça a commencé mardi.",
         "L’esportazione in CSV si rompe quando un nome contiene una virgola: la riga viene divisa in due. Credo sia iniziato martedì.",
       ],
     },
     {
-      app: "Mail", title: "Reply", fields: ["To: Atelier Dubois", "Subject: Re: Devis"],
+      app: "Mail", title: "Reply", fields: ["To: Claire Martin", "Subject: Re: Devis"],
       text: "bonjour, je voulais savoir si le devis est tjr valable le mois prochain ou si les prix vont changer. merci",
-      start: 2,
+      start: 6,
       out: [
         "Bonjour, je voulais savoir si le devis est toujours valable le mois prochain ou si les prix vont changer. Merci.",
         "Bonjour, le devis reste-t-il valable le mois prochain, ou les prix vont-ils changer ? Merci.",
@@ -565,6 +567,7 @@ open build/Clipmorph.app</code></pre>
         "Bonjour ! Petite question : le devis est-il toujours valable le mois prochain, ou les prix vont-ils bouger ? Merci beaucoup !",
         "- Demande si le devis est encore valable le mois prochain\n- Demande si les prix vont changer",
         "Bonjour, merci pour votre message. Le devis reste valable jusqu’au [date] ; au-delà, les prix pourront être révisés. Bonne journée.",
+        "Bonjour, merci pour votre message. Nos devis sont valables 30 jours à compter de leur envoi, et nos tarifs sont révisés une fois par an, en janvier. Votre devis du [to confirm: date du devis] reste donc valable jusqu’au [to confirm: date d’expiration]. Bien cordialement,",
         "Hello, I wanted to know whether the quote is still valid next month or if the prices will change. Thanks.",
         "Bonjour, je voulais savoir si le devis est toujours valable le mois prochain ou si les prix vont changer. Merci.",
         "Buongiorno, volevo sapere se il preventivo è ancora valido il mese prossimo o se i prezzi cambieranno. Grazie.",
@@ -583,7 +586,7 @@ open build/Clipmorph.app</code></pre>
     const li = document.createElement("li");
     const b = document.createElement("button");
     b.type = "button";
-    b.innerHTML = `<span class="n">${i + 1}</span><span></span>`;
+    b.innerHTML = `<span class="n">${(i + 1) % 10}</span><span></span>`;
     b.lastChild.textContent = name;
     b.addEventListener("click", () => run(i));
     li.append(b); list.append(li);
@@ -654,7 +657,7 @@ open build/Clipmorph.app</code></pre>
     caps(e.key.length === 1 ? e.key.toLowerCase() : e.key).forEach(k => k.classList.add("down"));
     if (!inView || e.metaKey || e.ctrlKey || e.altKey) return;
     const n = Number(e.key);
-    if (n >= 1 && n <= 9) { run(n - 1); buttons[n - 1].focus({ preventScroll: true }); }
+    if (/^[0-9]$/.test(e.key)) { const i = (n + 9) % 10; run(i); buttons[i].focus({ preventScroll: true }); }
   });
   addEventListener("keyup", e => {
     caps(e.key.length === 1 ? e.key.toLowerCase() : e.key).forEach(k => k.classList.remove("down"));
