@@ -4,7 +4,7 @@
 
 <p align="center">
   A macOS menu-bar app that transforms your clipboard with AI.<br>
-  Copy text, press <b>⌥Space</b>, pick a recipe, and the result streams back onto your clipboard.
+  Copy text, press <b>⌃`</b> (Control + backtick), pick a recipe, and the result streams back onto your clipboard.
 </p>
 
 <p align="center">
@@ -38,7 +38,7 @@ Requires macOS 14+ and the Swift toolchain (Command Line Tools are enough). On f
 
 | Key | Action |
 |---|---|
-| ⌥Space | Open / close the panel |
+| ⌃` | Open / close the panel (change it with **Change Shortcut…** in the menu bar) |
 | 1–9 or ↑↓ ⏎ | Run a recipe |
 | ⏎ (after result) | Close (and paste into the previous app if auto-paste is on) |
 | ⌫ | Back to recipes |

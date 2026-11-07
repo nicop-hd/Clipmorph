@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Clipmorph</title>
-<meta name="description" content="Rewrite anything you copy without leaving the app you're in. Clipmorph is a macOS menu-bar app: copy, press ⌥Space, pick a recipe.">
+<meta name="description" content="Rewrite anything you copy without leaving the app you're in. Clipmorph is a macOS menu-bar app: copy, press ⌃`, pick a recipe.">
 <meta name="theme-color" content="#120A22">
 <meta property="og:title" content="Clipmorph">
 <meta property="og:description" content="Rewrite anything you copy without leaving the app you're in.">
@@ -325,7 +325,7 @@
         </g>
       </svg>
       <h1 id="title"><span class="chrome">Clipmorph</span><span class="what">Rewrite anything you copy, without leaving the app you’re in.</span></h1>
-      <p class="lede">Copy text, press <kbd data-key="Alt">⌥</kbd> <kbd data-key=" ">Space</kbd> and pick a recipe. Claude or OpenAI rewrites it, and the result is on your clipboard, ready to paste.</p>
+      <p class="lede">Copy text, press <kbd data-key="Control">⌃</kbd> <kbd data-key="`">`</kbd> and pick a recipe. Claude or OpenAI rewrites it, and the result is on your clipboard, ready to paste.</p>
       <div class="actions">
         <a class="btn btn-primary" href="https://github.com/nicop-hd/Clipmorph/releases/latest/download/Clipmorph.zip"><svg class="dl" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Download for Mac</a>
         <a class="btn btn-quiet" href="#try">Try it below</a>
@@ -392,7 +392,7 @@
           <p>Any text, in any app: an email, a chat message, a rough note.</p>
         </div>
         <div>
-          <div class="keys"><kbd data-key="Alt">⌥</kbd> <kbd data-key=" ">Space</kbd></div>
+          <div class="keys"><kbd data-key="Control">⌃</kbd> <kbd data-key="`">`</kbd></div>
           <h3>Pick a recipe</h3>
           <p>The panel opens without taking focus. Press a number key.</p>
         </div>
@@ -481,7 +481,7 @@
         <li><div><h3>Unzip and move it to Applications</h3><p>Double-click <code>Clipmorph.zip</code>, then drag Clipmorph into your Applications folder.</p></div></li>
         <li><div><h3>Allow it the first time</h3><p>Clipmorph isn’t notarized by Apple yet, so macOS blocks the first launch. Open System Settings › Privacy &amp; Security, scroll down and click Open Anyway. Or run this once in Terminal:</p>
 <pre><code>xattr -dr com.apple.quarantine /Applications/Clipmorph.app</code></pre></div></li>
-        <li><div><h3>Add your API key</h3><p>Settings opens on first launch. Paste a Claude or OpenAI key, then press <kbd data-key="Alt">⌥</kbd> <kbd data-key=" ">Space</kbd> anywhere.</p></div></li>
+        <li><div><h3>Add your API key</h3><p>Settings opens on first launch. Paste a Claude or OpenAI key, then press <kbd data-key="Control">⌃</kbd> <kbd data-key="`">`</kbd> anywhere.</p></div></li>
       </ol>
       <div class="source">
         <h3>Prefer to build it yourself?</h3>
