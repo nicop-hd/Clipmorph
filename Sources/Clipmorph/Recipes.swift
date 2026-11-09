@@ -20,8 +20,8 @@ struct Recipe: Identifiable, Codable, Hashable {
 
 enum RecipeStore {
     static let builtIn: [Recipe] = [
-        Recipe(id: "fix", name: "Fix grammar & spelling", icon: "checkmark.seal",
-               prompt: "Fix grammar, spelling and punctuation. Keep the original wording, tone, language and formatting wherever they are already correct."),
+        Recipe(id: "fix", name: "Fix & improve", icon: "checkmark.seal",
+               prompt: "Correct and improve the text. Fix spelling, grammar and punctuation, rebuild awkward or incorrect sentences, and smooth the flow so it reads naturally. If a word or phrase is in a different language from the rest of the text, replace it with the right word in the text's main language, unless it is a name or a term normally left untranslated. Keep the meaning, language, tone and formatting, and don't add new content."),
         Recipe(id: "concise", name: "Make concise", icon: "scissors",
                prompt: "Rewrite the text to be as concise as possible while keeping every important point. Keep the same language."),
         Recipe(id: "professional", name: "Professional tone", icon: "briefcase",
